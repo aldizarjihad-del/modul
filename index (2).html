@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ayo Membaca! Bahasa Indonesia Kelas 1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fbfdff;--line:#d4e6ff;--ink:#1f2a5a;--mut:#56618c;--card:#fff;--ok:#12a150;--bad:#e5384f;--pri:#4f46e5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#141b3a;--line:#232f63;--ink:#eef2ff;--mut:#a3aed8;--card:#1d2650}}
+:root[data-theme="dark"]{--paper:#141b3a;--line:#232f63;--ink:#eef2ff;--mut:#a3aed8;--card:#1d2650}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;color:var(--ink);font:500 19px/1.45 "Baloo 2",ui-rounded,"Comic Sans MS",system-ui,sans-serif;background:var(--paper) repeating-linear-gradient(transparent 0 33px,var(--line) 33px 34px)}
+body::before{content:"";position:fixed;top:0;bottom:0;left:22px;width:2px;background:#ff8f8f;opacity:.7}
+.w{max-width:560px;margin:auto;padding:58px 16px 110px 36px}
+h1{font-size:30px;line-height:1.1;margin:.3em 0;font-weight:800}
+h2{font-size:22px;margin:.7em 0 .3em;font-weight:800}
+.sm{font-size:15px;color:var(--mut)}
+.hero{background:#ffd23f;color:#1f2a5a;border:3px solid #1f2a5a;border-radius:22px;box-shadow:5px 5px 0 var(--ink);padding:16px;margin:6px 5px 14px 0}
+.hero .sm{color:#1f2a5a}
+.blk{display:flex;gap:8px;margin-bottom:6px}
+.blk button{width:100%;max-width:56px;aspect-ratio:1;border:3px solid #1f2a5a;border-radius:14px;color:#fff;font:800 28px "Baloo 2",system-ui,sans-serif;box-shadow:3px 3px 0 #1f2a5a;cursor:pointer}
+.bar{height:14px;border-radius:9px;background:rgba(31,42,90,.18);margin:10px 0 4px;overflow:hidden}
+.bar i{display:block;height:100%;background:#1f2a5a;border-radius:9px}
+.fact{background:#fff3c4;color:#5b3a00;border:3px solid #5b3a00;border-radius:18px;padding:12px 14px;margin:12px 5px 12px 0}
+.card{display:flex;gap:14px;align-items:center;width:calc(100% - 5px);text-align:left;background:var(--card);color:var(--ink);border:3px solid var(--ink);border-radius:20px;box-shadow:5px 5px 0 var(--ink);padding:12px;margin:14px 0;font:inherit;cursor:pointer}
+.ic{flex:none;width:62px;height:62px;border-radius:16px;border:3px solid var(--ink);display:grid;place-items:center;font-size:32px}
+.tx{display:flex;flex-direction:column;line-height:1.25}
+.tx b{font-size:21px;font-weight:800}
+.tx em{font-style:normal;color:var(--mut);font-size:16px}
+.ch{font-size:14px;color:var(--mut)}
+.panel{background:var(--card);border:3px solid var(--ink);border-radius:20px;box-shadow:5px 5px 0 var(--ink);padding:14px 16px;margin:14px 5px 14px 0}
+.panel p{font-size:23px;margin:.35em 0}
+.panel.g{border-color:var(--ok);box-shadow:5px 5px 0 var(--ok)}
+.panel.r{border-color:var(--bad);box-shadow:5px 5px 0 var(--bad)}
+.c{text-align:center}.big{font-size:68px;line-height:1.1}.st{font-size:36px}
+.btn{background:var(--pri);color:#fff;border:3px solid var(--ink);border-radius:16px;box-shadow:4px 4px 0 var(--ink);padding:10px 18px;font:800 19px "Baloo 2",system-ui,sans-serif;cursor:pointer}
+.btn.big{display:block;width:calc(100% - 4px);margin:14px 0;font-size:21px;padding:12px}
+.btn.ghost{background:var(--card);color:var(--ink)}
+.btn:disabled{opacity:.4;cursor:default}
+.back{background:none;border:0;color:var(--pri);font:800 18px "Baloo 2",system-ui,sans-serif;padding:6px 0;cursor:pointer}
+.opt{display:block;width:calc(100% - 4px);text-align:left;background:var(--card);color:var(--ink);border:3px solid var(--ink);border-radius:18px;box-shadow:4px 4px 0 var(--ink);padding:12px 14px;margin:14px 0;font:700 22px "Baloo 2",system-ui,sans-serif;cursor:pointer}
+.opt b{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--ink);color:var(--paper);margin-right:10px}
+.opt.ok{background:#c9f5dc;color:#0b3d22;border-color:var(--ok);box-shadow:4px 4px 0 var(--ok)}
+.opt.no{background:#ffd9df;color:#5a0a17;border-color:var(--bad);box-shadow:4px 4px 0 var(--bad)}
+.row{display:flex;gap:12px;flex-wrap:wrap}.row .opt{width:auto;flex:1 1 0;min-width:56px}.row .opt{text-align:center;font-size:40px;font-weight:800;margin:14px 0}
+.dots{display:flex;gap:8px;margin:6px 0}
+.dots i{width:14px;height:14px;border-radius:9px;background:var(--line);border:2px solid var(--ink)}
+.dots i.on{width:38px}
+.nav{display:flex;justify-content:space-between;gap:10px;margin:16px 0}
+.spk{background:var(--line);color:var(--ink);border:2px solid var(--ink);border-radius:12px;padding:4px 12px;font-size:20px;cursor:pointer}
+button:focus-visible{outline:4px solid #f59e0b;outline-offset:2px}
+@media(prefers-reduced-motion:no-preference){.card,.btn,.opt,.blk button{transition:transform .08s,box-shadow .08s}.card:active,.btn:active,.opt:active,.blk button:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}}
+.mem{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 5px 14px 0}
+.mc{aspect-ratio:1;border:3px solid var(--ink);border-radius:16px;background:var(--pri);color:#fff;font:800 28px "Baloo 2",system-ui,sans-serif;box-shadow:3px 3px 0 var(--ink);display:grid;place-items:center;cursor:pointer;padding:2px}
+.mc.o{background:var(--card);color:var(--ink);font-size:36px}.mc.o.w{font-size:20px}
+.mc.d{background:#c9f5dc;color:#0b3d22;border-color:var(--ok)}
+.slot{min-width:72px;height:62px;border:3px dashed var(--ink);border-radius:14px;display:grid;place-items:center;font-size:30px;font-weight:800;padding:0 8px}
+.opt:disabled{opacity:.3;cursor:default}
+nav{position:fixed;left:0;right:0;bottom:0;z-index:5;display:flex;justify-content:space-around;background:var(--card);border-top:3px solid var(--ink);padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px))}
+nav[hidden]{display:none}
+nav button{background:none;border:0;border-radius:16px;color:var(--mut);font:800 14px "Baloo 2",system-ui,sans-serif;display:flex;flex-direction:column;align-items:center;padding:2px 20px;cursor:pointer}
+nav button span{font-size:24px;line-height:1.2}
+nav button.on{background:var(--line);color:var(--ink)}
+#toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(92px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--paper);padding:10px 16px;border-radius:14px;font-size:16px;max-width:88%;text-align:center;z-index:9}
+.srch{width:calc(100% - 5px);border:3px solid var(--ink);border-radius:16px;background:var(--card);color:var(--ink);padding:8px 14px;font:700 18px "Baloo 2",system-ui,sans-serif;margin:6px 0}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 5px 8px 0}
+.chip{flex:none;border:3px solid var(--ink);border-radius:999px;background:var(--card);color:var(--ink);padding:2px 14px;font:700 16px "Baloo 2",system-ui,sans-serif;cursor:pointer}
+.chip.on{background:var(--pri);color:#fff}
+.tag{align-self:flex-start;font-size:13px;font-weight:800;border-radius:999px;padding:0 10px;background:var(--line)}
+.act{margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+.star{background:none;border:0;font-size:30px;line-height:1;color:#f59e0b;cursor:pointer}
+.open{background:none;border:0;font:800 17px "Baloo 2",system-ui,sans-serif;color:var(--pri);cursor:pointer;white-space:nowrap}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 5px 14px 0}
+.stat{background:var(--card);border:3px solid var(--ink);border-radius:18px;box-shadow:4px 4px 0 var(--ink);text-align:center;padding:10px 4px;font-size:14px;color:var(--mut);line-height:1.2}
+.stat b{display:block;font-size:30px;color:var(--ink)}
+.badges{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:8px 5px 14px 0}
+.bd{background:var(--card);border:3px solid var(--ink);border-radius:18px;text-align:center;padding:10px 6px;font-size:14px;color:var(--mut);line-height:1.25}
+.bd b{display:block;font-size:19px;color:var(--ink)}
+.bd i{font-style:normal;font-size:36px;display:block}
+.bd.lock{opacity:.55}
+
+.snd{position:fixed;top:calc(8px + env(safe-area-inset-top,0px));right:12px;z-index:6;width:46px;height:46px;border-radius:50%;border:3px solid var(--ink);background:var(--card);color:var(--ink);font-size:22px;line-height:1;box-shadow:3px 3px 0 var(--ink);cursor:pointer;display:grid;place-items:center;padding:0}
+.snd.off{background:#ffd9df}
+.snd:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+.ln{cursor:pointer;border-radius:10px;padding:0 8px;margin-left:-8px;margin-right:-8px}
+.ln.hl{background:#fff3c4;color:#5b3a00}
+.rbar{display:flex;gap:8px;margin:4px 0 2px}
+.ln.sub{font-size:20px;font-weight:800;color:var(--pri);margin:.9em 0 .1em}
+#lines.f0 p{font-size:19px}#lines.f2 p{font-size:28px}#lines.f2 .ln.sub{font-size:24px}
+.rbar{flex-wrap:wrap}
+.qa{border-top:2px dashed var(--line);padding:8px 0}.qa summary{font-weight:800;cursor:pointer}.qa p{font-size:17px;margin:.4em 0}
+.pl{font-size:17px;margin:.3em 0;padding-left:0}.pl b{color:var(--pri)}
+
+.set{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0;border-top:2px dashed var(--line);font-weight:700}
+.set small{display:block;color:var(--mut);font-size:14px;font-weight:500;line-height:1.25}
+.sw{flex:none;width:62px;height:34px;border-radius:999px;border:3px solid var(--ink);background:var(--line);position:relative;cursor:pointer;padding:0}
+.sw i{position:absolute;top:2px;left:2px;width:24px;height:24px;border-radius:50%;background:var(--ink);transition:left .15s}
+.sw[aria-checked="true"]{background:var(--ok)}
+.sw[aria-checked="true"] i{left:30px;background:#fff}
+.slot.lt{min-width:48px;padding:0 4px}
+.slot.wd{font-size:20px;min-width:64px}
+.row .opt.wd{font-size:22px;min-width:72px}
+.cf{position:fixed;top:-40px;z-index:20;pointer-events:none;animation:fall 1.9s ease-in forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+.hi{display:inline-block;background:#fff;color:#1f2a5a;border:2px solid #1f2a5a;border-radius:999px;padding:0 12px;font-size:15px;font-weight:800;margin-top:6px}
+</style>
+</head>
+<body>
+<div class="w" id="app"></div>
+<div id="toast" role="status" hidden></div>
+<button id="snd" class="snd" onclick="togSnd()" aria-label="Matikan suara" aria-pressed="true">🔊</button>
+<nav id="nv" hidden><button data-t="home" onclick="home()"><span>🏠</span>Beranda</button><button data-t="buku" onclick="buku()"><span>📚</span>Buku</button><button data-t="tentang" onclick="tentang()"><span>ℹ️</span>Tentang</button></nav>
+<script>
+const D={"mataPelajaran": "Bahasa Indonesia", "kelas": 1, "usiaSasaran": "6-7 tahun", "modul": [{"id": "modul_1", "nomor": 1, "judul": "Abjad dan Bunyi Huruf", "deskripsi": "Mengenal huruf vokal dan konsonan.", "ikon": "🔤", "warna": "#5B3FE0", "durasiMenit": 4, "subMateri": [{"judul": "Huruf Vokal yang Ramah (A, I, U, E, O)", "isi": ["Ada 5 huruf vokal.", "Huruf vokal itu A, I, U, E, O.", "Huruf vokal itu ramah. Bunyinya keluar dengan mulut terbuka.", "A seperti Apel 🍎.", "I seperti Ikan 🐟.", "U seperti Ular 🐍.", "E seperti Elang 🦅.", "O seperti Orang 🧑.", "Ayo ucapkan bersama: A, I, U, E, O!"], "id": "modul_1_sub_1", "urutan": 1}, {"judul": "Membaca Suku Kata Sederhana (ba-bu, ma-ma)", "isi": ["Huruf selain A, I, U, E, O disebut huruf konsonan.", "Contohnya B, M, K, dan S.", "Suku kata adalah potongan kata.", "Konsonan bertemu vokal. Jadilah suku kata.", "B + A = BA. B + U = BU.", "Ayo baca pelan-pelan: ba, bi, bu, be, bo.", "Gabungkan suku kata: ba-bu, ma-ma, bu-ku, ba-ju.", "Hebat! Kamu sudah bisa membaca suku kata."], "id": "modul_1_sub_2", "urutan": 2}, {"judul": "Benda di Sekitarku dan Huruf Depannya", "isi": ["Setiap benda punya nama.", "Nama benda punya huruf depan.", "Buku 📚 huruf depannya B.", "Meja huruf depannya M.", "Pensil ✏️ huruf depannya P.", "Topi 🧢 huruf depannya T.", "Kursi huruf depannya K.", "Ayo cari benda di kelasmu. Sebutkan huruf depannya!"], "id": "modul_1_sub_3", "urutan": 3}], "tipsGuru": "Ucapkan bunyi huruf dengan jelas, lalu minta anak menirukan. Gunakan kartu huruf bergambar agar anak mudah mengingat. Beri pujian untuk setiap usaha anak, sekecil apa pun.", "tahukahKamu": "Abjad bahasa Indonesia punya 26 huruf, dari A sampai Z. Ada 5 huruf vokal dan 21 huruf konsonan!", "jumlahMateri": 3}, {"id": "modul_2", "nomor": 2, "judul": "Membaca Kata dan Kalimat Pendek", "deskripsi": "Dari suku kata menjadi kata dan kalimat.", "ikon": "📖", "warna": "#1BBFA5", "durasiMenit": 4, "subMateri": [{"judul": "Merangkai Kata Sederhana", "isi": ["Suku kata bisa digabung. Jadilah kata.", "ba + ju = baju 👕", "bu + ku = buku 📚", "ma + ta = mata 👀", "sa + pi = sapi 🐄", "ka + ki = kaki 🦶", "Kata punya arti. Baju untuk dipakai. Buku untuk dibaca."], "id": "modul_2_sub_1", "urutan": 1}, {"judul": "Membaca Kalimat 2-3 Kata", "isi": ["Kata bisa digabung. Jadilah kalimat.", "Kalimat pendek punya 2 atau 3 kata.", "Contoh: Ibu masak.", "Contoh: Adik makan nasi.", "Contoh: Ayah baca buku.", "Huruf pertama kalimat ditulis besar.", "Ayo baca bersama-sama!"], "id": "modul_2_sub_2", "urutan": 2}, {"judul": "Mengenal Tanda Baca Titik (.) dan Tanya (?)", "isi": ["Titik (.) ada di akhir kalimat cerita.", "Contoh: Ani makan nasi.", "Tanda tanya (?) ada di akhir kalimat tanya.", "Contoh: Siapa namamu?", "Contoh: Itu apa?", "Saat bertemu titik, suaramu turun dan berhenti sebentar.", "Saat bertemu tanda tanya, suaramu naik sedikit."], "id": "modul_2_sub_3", "urutan": 3}], "tipsGuru": "Minta anak menunjuk setiap kata dengan jari saat membaca. Contohkan intonasi: suara turun untuk titik, suara naik sedikit untuk tanda tanya.", "tahukahKamu": "Tanda tanya (?) dipakai di banyak bahasa di dunia, bukan hanya bahasa Indonesia!", "jumlahMateri": 3}, {"id": "modul_3", "nomor": 3, "judul": "Listening & Speaking", "deskripsi": "Mendengar dan berbicara dengan sopan.", "ikon": "🗣️", "warna": "#F59E0B", "durasiMenit": 4, "subMateri": [{"judul": "Menyapa Teman dan Guru dengan Sopan", "isi": ["Kita menyapa dengan sopan.", "Pagi hari: Selamat pagi.", "Siang hari: Selamat siang.", "Sore hari: Selamat sore.", "Malam hari: Selamat malam.", "Menyapa guru: Selamat pagi, Bu Guru.", "Menyapa teman: Halo, Dina! Apa kabar?", "Saat menyapa, lihat orangnya, tersenyum, dan bicara dengan suara jelas. 😊"], "id": "modul_3_sub_1", "urutan": 1}, {"judul": "Mengucapkan Kata Ajaib (Tolong, Terima Kasih, Maaf)", "isi": ["Ada 3 kata ajaib.", "Tolong: dipakai saat kita minta bantuan. Contoh: Tolong ambilkan pensil, ya.", "Terima kasih: dipakai saat kita diberi atau dibantu. Contoh: Terima kasih, Bu.", "Maaf: dipakai saat kita berbuat salah. Contoh: Maaf, aku tidak sengaja.", "Kata ajaib membuat semua orang senang. ✨"], "id": "modul_3_sub_2", "urutan": 2}, {"judul": "Menceritakan Diri Sendiri (Nama, Umur, Hobi)", "isi": ["Ayo kenalkan dirimu!", "Sebutkan namamu. Contoh: Namaku Sinta.", "Sebutkan umurmu. Contoh: Umurku 7 tahun.", "Sebutkan hobimu. Hobi adalah kegiatan yang kamu suka. Contoh: Hobiku menggambar.", "Ayo latihan: Namaku ..., umurku ..., hobiku ...."], "id": "modul_3_sub_3", "urutan": 3}], "tipsGuru": "Beri kesempatan anak berlatih berbicara dengan kalimat contoh. Dengarkan sampai selesai tanpa memotong, lalu beri pujian atas keberaniannya.", "tahukahKamu": "Di Indonesia ada ratusan bahasa daerah. Bahasa Indonesia membantu kita saling mengerti!", "jumlahMateri": 3}, {"id": "modul_4", "nomor": 4, "judul": "Budi Pekerti & Karakter Sehari-hari", "deskripsi": "Menjadi anak yang rapi, jujur, dan baik.", "ikon": "🤝", "warna": "#F43F5E", "durasiMenit": 5, "subMateri": [{"judul": "Merawat Buku dan Alat Tulis", "isi": ["Buku dan alat tulis adalah teman belajar kita.", "Kita harus merawatnya.", "Simpan buku di dalam tas dengan rapi.", "Jangan mencoret-coret buku.", "Jangan melipat atau menyobek halaman buku.", "Tutup spidol setelah dipakai. Raut pensil dengan hati-hati.", "Cuci tangan sebelum membaca buku. Tangan bersih, buku pun bersih."], "id": "modul_4_sub_1", "urutan": 1}, {"judul": "Menyimak Cerita Dongeng Pendek", "isi": ["Ayo simak dongeng pendek: Kelinci yang Jujur 🐰", "Kelinci menemukan dompet di taman.", "Kelinci tidak membawanya pulang.", "Kelinci mencari pemiliknya.", "Kelinci bertemu Bu Beruang.", "\"Ini dompet Ibu?\" tanya Kelinci.", "\"Ya! Terima kasih, Kelinci!\" kata Bu Beruang.", "Kelinci senang. Hatinya tenang.", "Ayo jawab: Siapa tokoh dongengnya? Apa yang dilakukan Kelinci?"], "id": "modul_4_sub_2", "urutan": 2}, {"judul": "Menjadi Anak yang Jujur dan Baik", "isi": ["Anak jujur selalu berkata benar.", "Anak jujur mengaku saat berbuat salah.", "Anak jujur tidak mengambil barang milik orang lain.", "Anak baik suka menolong teman.", "Anak baik berkata dengan sopan.", "Kalau kita jujur dan baik, teman-teman pun sayang padamu. 💛"], "id": "modul_4_sub_3", "urutan": 3}], "tipsGuru": "Setelah membacakan dongeng, ajukan pertanyaan sederhana: siapa, di mana, dan apa yang terjadi. Contohkan kejujuran lewat perilaku sehari-hari di kelas.", "tahukahKamu": "Dongeng sudah diceritakan dari mulut ke mulut sejak zaman dulu, bahkan sebelum ada buku!", "jumlahMateri": 3}], "kuis": [{"id": "m1_q1", "modulId": "modul_1", "pertanyaan": "Huruf pertama dari kata \"A-p-e-l 🍎\" adalah...", "pilihan": [{"kode": "A", "teks": "A"}, {"kode": "B", "teks": "L"}, {"kode": "C", "teks": "P"}], "jawabanBenar": "A", "penjelasan": "Bagus sekali! Kata Apel diawali huruf A."}, {"id": "m1_q2", "modulId": "modul_1", "pertanyaan": "Mana yang huruf vokal?", "pilihan": [{"kode": "A", "teks": "B"}, {"kode": "B", "teks": "U"}, {"kode": "C", "teks": "M"}], "jawabanBenar": "B", "penjelasan": "Keren! U adalah huruf vokal. Huruf vokal itu A, I, U, E, O."}, {"id": "m1_q3", "modulId": "modul_1", "pertanyaan": "B + U = ...", "pilihan": [{"kode": "A", "teks": "BA"}, {"kode": "B", "teks": "BI"}, {"kode": "C", "teks": "BU"}], "jawabanBenar": "C", "penjelasan": "Pintar! B dan U menjadi BU, seperti pada kata buku 📚."}, {"id": "m2_q1", "modulId": "modul_2", "pertanyaan": "ma + ta = ...  👀", "pilihan": [{"kode": "A", "teks": "mama"}, {"kode": "B", "teks": "tata"}, {"kode": "C", "teks": "mata"}], "jawabanBenar": "C", "penjelasan": "Hebat! Suku kata ma dan ta digabung menjadi mata."}, {"id": "m2_q2", "modulId": "modul_2", "pertanyaan": "Mana kalimat yang benar?", "pilihan": [{"kode": "A", "teks": "Adik makan nasi."}, {"kode": "B", "teks": "Makan adik nasi."}, {"kode": "C", "teks": "Nasi makan adik."}], "jawabanBenar": "A", "penjelasan": "Mantap! Adik makan nasi. Kata-katanya sudah berurutan."}, {"id": "m2_q3", "modulId": "modul_2", "pertanyaan": "Siapa namamu_  Tanda baca yang tepat adalah...", "pilihan": [{"kode": "A", "teks": "Titik (.)"}, {"kode": "B", "teks": "Tanda tanya (?)"}, {"kode": "C", "teks": "Tidak pakai tanda"}], "jawabanBenar": "B", "penjelasan": "Kamu benar! Kalimat tanya diakhiri dengan tanda tanya (?)."}, {"id": "m3_q1", "modulId": "modul_3", "pertanyaan": "Pagi hari kamu bertemu Bu Guru 🏫. Kamu berkata...", "pilihan": [{"kode": "A", "teks": "Selamat malam, Bu."}, {"kode": "B", "teks": "Selamat pagi, Bu."}, {"kode": "C", "teks": "Sampai jumpa, Bu."}], "jawabanBenar": "B", "penjelasan": "Pintar! Di pagi hari kita berkata: Selamat pagi."}, {"id": "m3_q2", "modulId": "modul_3", "pertanyaan": "Teman memberimu hadiah 🎁. Kata ajaibnya...", "pilihan": [{"kode": "A", "teks": "Maaf"}, {"kode": "B", "teks": "Tolong"}, {"kode": "C", "teks": "Terima kasih"}], "jawabanBenar": "C", "penjelasan": "Hebat! Saat diberi sesuatu, kita berkata: Terima kasih."}, {"id": "m3_q3", "modulId": "modul_3", "pertanyaan": "Kamu tidak sengaja menabrak teman. Kata ajaibnya...", "pilihan": [{"kode": "A", "teks": "Maaf"}, {"kode": "B", "teks": "Terima kasih"}, {"kode": "C", "teks": "Tolong"}], "jawabanBenar": "A", "penjelasan": "Bagus sekali! Saat berbuat salah, kita berkata: Maaf."}, {"id": "m4_q1", "modulId": "modul_4", "pertanyaan": "Cara merawat buku 📚 yang baik adalah...", "pilihan": [{"kode": "A", "teks": "Dicoret-coret"}, {"kode": "B", "teks": "Disimpan di tas dengan rapi"}, {"kode": "C", "teks": "Dilempar"}], "jawabanBenar": "B", "penjelasan": "Keren! Buku disimpan dengan rapi agar tetap bagus."}, {"id": "m4_q2", "modulId": "modul_4", "pertanyaan": "Kelinci 🐰 menemukan dompet. Apa yang Kelinci lakukan?", "pilihan": [{"kode": "A", "teks": "Membawa pulang"}, {"kode": "B", "teks": "Membuangnya"}, {"kode": "C", "teks": "Mencari pemiliknya"}], "jawabanBenar": "C", "penjelasan": "Hebat! Kelinci jujur. Ia mencari pemilik dompet."}, {"id": "m4_q3", "modulId": "modul_4", "pertanyaan": "Kamu memecahkan gelas 🥛. Anak jujur akan...", "pilihan": [{"kode": "A", "teks": "Mengaku kepada Ibu"}, {"kode": "B", "teks": "Diam saja"}, {"kode": "C", "teks": "Menyalahkan adik"}], "jawabanBenar": "A", "penjelasan": "Pintar! Anak jujur berani mengaku. Kamu anak hebat!"}]};
+const ITEMS=[["🍎","Apel","A"],["🐟","Ikan","I"],["🐍","Ular","U"],["🦅","Elang","E"],["📚","Buku","B"],["✏️","Pensil","P"],["🧢","Topi","T"],["🐄","Sapi","S"],["👕","Baju","B"],["🦶","Kaki","K"],["👀","Mata","M"],["🪑","Kursi","K"],["🍌","Pisang","P"],["🌙","Bulan","B"],["☀️","Matahari","M"],["🐱","Kucing","K"]];
+let S={};try{S=JSON.parse(localStorage.getItem("k1")||"{}")}catch(e){}
+const save=()=>{try{localStorage.setItem("k1",JSON.stringify(S))}catch(e){}};
+const app=document.getElementById("app"),nv=document.getElementById("nv");
+let TAB=null;
+const A={set v(h){stopRead();app.innerHTML=h;nv.hidden=!TAB;nv.querySelectorAll("button").forEach(b=>b.classList.toggle("on",b.dataset.t==TAB));TAB=null;syncSnd()}};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));
+const stars=n=>"⭐".repeat(n)+"☆".repeat(3-n);
+const shuffle=a=>a.map(x=>[Math.random(),x]).sort((p,q)=>p[0]-q[0]).map(p=>p[1]);
+/* ===== SUARA: bisa dinonaktifkan (S.vo = suara bacaan, S.fx = efek suara) ===== */
+const RATES=[.7,.85,1];
+const clean=t=>String(t).replace(/[\p{Extended_Pictographic}\uFE0F\u200D]/gu,"").replace(/_/g," ").replace(/\s+/g," ").trim();
+let VC=null,rtok=0,AC=null;
+function voice(){try{if(!VC)VC=speechSynthesis.getVoices().find(v=>/^id/i.test(v.lang))||null}catch(e){}return VC}
+function speakText(t,cb){
+  try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(clean(t));u.lang="id-ID";u.rate=RATES[S.rt??1];const v=voice();if(v)u.voice=v;if(cb){u.onend=cb;u.onerror=cb}speechSynthesis.speak(u)}catch(e){cb&&cb()}
+}
+function say(t){if(S.vo===0)return;rtok++;clearHl();speakText(t)}
+function hear(t){if(S.vo===0){toast("Suara sedang nonaktif. Ketuk tombol 🔇 di kanan atas untuk menyalakan.");return}say(t)}
+function clearHl(){document.querySelectorAll(".ln.hl").forEach(e=>e.classList.remove("hl"))}
+function setBtn(on){const b=document.getElementById("rb");if(b){b.dataset.on=on?"1":"";b.textContent=on?"⏹ Berhenti":"🔊 Bacakan Semua"}}
+function stopRead(){rtok++;try{speechSynthesis.cancel()}catch(e){}clearHl();setBtn(false)}
+function hearEl(el){
+  if(S.vo===0){toast("Suara sedang nonaktif. Ketuk tombol 🔇 di kanan atas untuk menyalakan.");return}
+  rtok++;clearHl();setBtn(false);el.classList.add("hl");speakText(el.textContent,()=>el.classList.remove("hl"));
+}
+function readAll(){
+  const b=document.getElementById("rb");
+  if(b&&b.dataset.on){stopRead();return}
+  if(S.vo===0){toast("Suara sedang nonaktif. Ketuk tombol 🔇 di kanan atas untuk menyalakan.");return}
+  const ps=[...document.querySelectorAll("#lines .ln")],tok=++rtok;let i=0;setBtn(true);
+  const next=()=>{if(tok!==rtok)return;clearHl();if(i>=ps.length){setBtn(false);return}const p=ps[i++];p.classList.add("hl");try{p.scrollIntoView({block:"center",behavior:"smooth"})}catch(e){}speakText(p.textContent,next)};
+  next();
+}
+const FX={ok:[[660,.1],[880,.16]],no:[[260,.16],[190,.24]],win:[[523,.1],[659,.1],[784,.1],[1047,.28]],tap:[[620,.06]]};
+function fx(n){
+  if(S.fx===0)return;
+  try{AC=AC||new(window.AudioContext||window.webkitAudioContext)();if(AC.state=="suspended")AC.resume();let t=AC.currentTime;
+    FX[n].forEach(([f,d])=>{const o=AC.createOscillator(),g=AC.createGain();o.type=n=="no"?"triangle":"sine";o.frequency.value=f;g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(.18,t+.02);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g);g.connect(AC.destination);o.start(t);o.stop(t+d+.03);t+=d})}catch(e){}
+}
+function syncSnd(){
+  const on=S.vo!==0||S.fx!==0,b=document.getElementById("snd");
+  if(b){b.textContent=on?"🔊":"🔇";b.classList.toggle("off",!on);b.setAttribute("aria-label",on?"Matikan suara":"Nyalakan suara");b.setAttribute("aria-pressed",String(on))}
+  document.querySelectorAll(".sw").forEach(s=>s.setAttribute("aria-checked",String(S[s.dataset.k]!==0)));
+}
+function togSnd(){
+  const on=S.vo!==0||S.fx!==0;
+  if(on){stopRead();S.vo=0;S.fx=0}else{S.vo=1;S.fx=1}
+  save();syncSnd();toast(on?"🔇 Semua suara dimatikan":"🔊 Suara dinyalakan");if(!on)fx("ok");
+}
+function tg(k){
+  S[k]=S[k]===0?1:0;if(k=="vo"&&S.vo===0)stopRead();
+  save();syncSnd();if(S[k]!==0){k=="fx"?fx("ok"):say("Suara bacaan menyala.")}
+}
+function applyTheme(){const r=document.documentElement;if(S.th=="light"||S.th=="dark")r.dataset.theme=S.th;else delete r.dataset.theme}
+function burst(){
+  try{if(matchMedia("(prefers-reduced-motion: reduce)").matches)return}catch(e){}
+  const e=["🎉","⭐","✨","🎈","🌟"];
+  for(let i=0;i<26;i++){const s=document.createElement("span");s.className="cf";s.setAttribute("aria-hidden","true");s.textContent=e[i%5];s.style.cssText=`left:${Math.random()*96}vw;animation-delay:${Math.random()*.5}s;font-size:${18+Math.random()*18}px`;document.body.appendChild(s);setTimeout(()=>s.remove(),2600)}
+}
+/* ===== Hari beruntun ===== */
+const ymd=d=>d.getFullYear()+"-"+String(d.getMonth()+1).padStart(2,"0")+"-"+String(d.getDate()).padStart(2,"0");
+function streak(){const t=ymd(new Date()),y=ymd(new Date(Date.now()-864e5));return S.day===t||S.day===y?(S.str||0):0}
+function good(){
+  S.ok=(S.ok||0)+1;const t=ymd(new Date());
+  if(S.day!=t){const y=ymd(new Date(Date.now()-864e5));S.str=S.day==y?(S.str||0)+1:1;S.day=t;S.bs=Math.max(S.bs||0,S.str)}
+  save();
+}
+const LET={A:["Apel","🍎"],I:["Ikan","🐟"],U:["Ular","🐍"],E:["Elang","🦅"],O:["Orang","🧑"]};
+function letter(c){const l=LET[c];fx("tap");toast(`${c} seperti ${l[0]} ${l[1]}`);say(`${c}. ${c} seperti ${l[0]}`)}
+let M,st,cur,Q,qi,sc,ans;
+
+function home(){TAB="home";
+  const done=D.modul.filter(m=>S[m.id]!=null).length;
+  const fact=D.modul[Math.floor(Math.random()*D.modul.length)].tahukahKamu;
+  const col=["#ef4444","#d97706","#16a34a","#2563eb","#9333ea"];
+  A.v=`<div class="hero"><div class="blk">${"AIUEO".split("").map((c,i)=>`<button style="background:${col[i]}" onclick="letter('${c}')" aria-label="Huruf ${c}">${c}</button>`).join("")}</div><h1>${S.nama?`Halo, ${esc(S.nama)}! 👋`:"Ayo Membaca!"}</h1><div class="sm">Bahasa Indonesia untuk Kelas 1 SD</div>${streak()?`<div class="hi">🔥 ${streak()} hari beruntun</div>`:""}<div class="bar"><i style="width:${done/D.modul.length*100}%"></i></div><div class="sm">${done} dari ${D.modul.length} modul selesai</div></div>
+  <div class="fact">🤓 <b>Tahukah Kamu?</b><br>${esc(fact)}</div><button class="card" onclick="buku()" style="background:#2dd4bf;color:#06302b"><span class="ic" style="background:#fff">📚</span><span class="tx"><b>Buku K13 Kelas 1 SD</b><em style="color:#06302b">16 buku: Tematik Terpadu Tema 1–8, Buku Siswa dan Buku Guru.</em></span><span style="margin-left:auto;font-size:28px">›</span></button><h2>Pilih Modul</h2>`+
+  D.modul.map(m=>`<button class="card" onclick="openM('${m.id}')"><span class="ic" style="background:${m.warna}">${m.ikon}</span><span class="tx"><small style="color:${m.warna};font-weight:800">Modul ${m.nomor}</small><b>${esc(m.judul)}</b><em>${esc(m.deskripsi)}</em><span class="ch">${m.durasiMenit} menit, ${m.jumlahMateri} materi${S[m.id]!=null?" · "+stars(S[m.id]):""}</span></span></button>`).join("")+
+  `<h2>Main & Latihan</h2><button class="card" onclick="games()"><span class="ic" style="background:#ffd23f">🎮</span><span class="tx"><b>Main Yuk!</b><em>${GAMES.length} game seru untuk belajar membaca.</em><span class="ch">Huruf, kata, memori, dan lainnya</span></span></button><button class="card" onclick="mix()"><span class="ic" style="background:#38bdf8">🔀</span><span class="tx"><b>Latihan Campur</b><em>8 soal acak dari semua modul.</em><span class="ch">Soal dan jawabannya selalu berganti</span></span></button>`;
+  scrollTo(0,0);
+}
+
+function openM(id){M=D.modul.find(m=>m.id==id);st=0;mod()}
+function mod(){
+  const n=M.subMateri.length,last=st==n;
+  let h=`<button class="back" onclick="home()">← Beranda</button><h1 style="color:${M.warna}">${M.ikon} ${esc(M.judul)}</h1><div class="dots">${Array.from({length:n+1},(_,i)=>`<i class="${i==st?"on":""}"${i==st?` style="background:${M.warna}"`:""}></i>`).join("")}</div>`;
+  if(!last){
+    const s=M.subMateri[st];
+    h+=`<div class="panel"><h2>${st+1}. ${esc(s.judul)}</h2><div class="rbar"><button class="spk" id="rb" onclick="readAll()">🔊 Bacakan Semua</button></div><div class="sm">Ketuk satu kalimat untuk mendengarnya.</div><div id="lines">${s.isi.map(l=>`<p class="ln" onclick="hearEl(this)">${esc(l)}</p>`).join("")}</div></div>`;
+  }else{
+    h+=`<div class="panel"><h2>👩‍🏫 Tips untuk Guru/Orang Tua</h2><p style="font-size:19px">${esc(M.tipsGuru)}</p></div><div class="fact">🤓 <b>Tahukah Kamu?</b><br>${esc(M.tahukahKamu)}</div><button class="btn big" style="background:${M.warna}" onclick="quiz()">Mulai Kuis</button>`;
+  }
+  h+=`<div class="nav"><button class="btn ghost" ${st?"":"disabled"} onclick="st--;mod()">← Kembali</button>${last?"":`<button class="btn" style="background:${M.warna}" onclick="st++;mod()">Lanjut →</button>`}</div>`;
+  A.v=h;scrollTo(0,0);
+}
+
+const EX=[
+[1,"Huruf pertama kata \"I-k-a-n 🐟\" adalah...","I","K","N","Hebat! Ikan diawali huruf I."],
+[1,"Mana yang huruf konsonan?","M","A","E","Benar! M adalah konsonan. Vokal itu A, I, U, E, O."],
+[1,"B + A = ...","BA","AB","BE","Pintar! B dan A menjadi BA."],
+[1,"Huruf depan \"Buku 📚\" adalah...","B","K","U","Bagus! Buku diawali huruf B."],
+[2,"ba + ju = ...  👕","baju","jubah","buja","Hebat! ba dan ju menjadi baju."],
+[2,"sa + pi = ...  🐄","sapi","pisa","sipa","Hebat! sa dan pi menjadi sapi."],
+[2,"Mana kalimat yang benar?","Ibu masak.","Masak Ibu.","masak Ibu.","Mantap! Kalimat dimulai huruf besar dan diakhiri titik."],
+[2,"Kalimat cerita diakhiri tanda...","Titik (.)","Tanda tanya (?)","Tidak ada tanda","Betul! Kalimat cerita diakhiri titik (.)."],
+[3,"Sore hari, kamu bertemu teman. Kamu berkata...","Selamat sore","Selamat pagi","Selamat malam","Pintar! Di sore hari kita berkata: Selamat sore."],
+[3,"Kamu ingin dipinjami penghapus. Katakan...","Tolong","Maaf","Terima kasih","Hebat! Saat minta bantuan, kita berkata: Tolong."],
+[3,"Hobi adalah kegiatan yang...","kamu suka","kamu benci","kamu takuti","Betul! Hobi adalah kegiatan yang kamu suka."],
+[3,"Cara memperkenalkan nama yang benar...","Namaku Sinta.","Sinta namaku aku.","Aku nama Sinta.","Bagus! Namaku Sinta. Kalimatnya berurutan."],
+[4,"Setelah memakai spidol 🖍️, kita harus...","Menutupnya","Membuangnya","Menggigitnya","Keren! Spidol ditutup agar tidak kering."],
+[4,"Anak jujur selalu berkata...","Benar","Bohong","Diam saja","Hebat! Anak jujur berkata benar."],
+[4,"Teman jatuh di lapangan. Anak baik akan...","Menolong","Menertawakan","Pergi","Pintar! Anak baik menolong teman."],
+[4,"Kamu menemukan uang milik teman. Kamu akan...","Mengembalikannya","Menyimpannya","Membuangnya","Bagus! Anak jujur mengembalikan barang teman."],
+[1,"Huruf vokal ada berapa?","5","4","6","Betul! Ada 5 huruf vokal: A, I, U, E, O."],
+[1,"Huruf depan Topi 🧢 adalah...","T","P","O","Pintar! Topi diawali huruf T."],
+[2,"ka + ki = ...  🦶","kaki","kika","kiki","Hebat! ka dan ki menjadi kaki."],
+[2,"Mana yang kalimat tanya?","Itu apa?","Itu buku.","Itu meja.","Benar! Kalimat tanya diakhiri tanda tanya (?)."],
+[3,"Pagi hari kamu bertemu teman. Kamu berkata...","Selamat pagi","Selamat malam","Selamat sore","Bagus! Di pagi hari kita berkata: Selamat pagi."],
+[3,"Hobiku menggambar. Menggambar adalah...","hobi","umur","nama","Betul! Menggambar adalah hobi, kegiatan yang kamu suka."],
+[4,"Kita mencuci tangan sebelum...","membaca buku","mencoret buku","menyobek buku","Pintar! Tangan bersih, buku pun bersih."],
+[4,"Anak baik berkata dengan...","sopan","kasar","berteriak","Hebat! Anak baik berkata dengan sopan."]];
+const BANK=D.kuis.map(k=>{const c=k.pilihan.find(p=>p.kode==k.jawabanBenar).teks;return{m:k.modulId,q:k.pertanyaan,o:[c,...k.pilihan.filter(p=>p.teks!=c).map(p=>p.teks)],ex:k.penjelasan}}).concat(EX.map(t=>({m:"modul_"+t[0],q:t[1],o:[t[2],t[3],t[4]],ex:t[5]})));
+function prep(b){const o=shuffle(b.o);return{pertanyaan:b.q,pilihan:o.map((x,i)=>({kode:"ABC"[i],teks:x})),jawabanBenar:"ABC"[o.indexOf(b.o[0])],penjelasan:b.ex}}
+let qm=0;
+function quiz(){qm=0;Q=shuffle(BANK.filter(b=>b.m==M.id)).slice(0,5).map(prep);qi=0;sc=0;ans=null;q()}
+function mix(){qm=1;Q=shuffle(BANK).slice(0,8).map(prep);qi=0;sc=0;ans=null;q()}
+function q(){
+  if(qi>=Q.length){
+    const s3=Math.round(3*sc/Q.length);
+    if(!qm){S[M.id]=Math.max(S[M.id]??0,s3);save()}
+    A.v=`<div class="panel c"><div class="big">${s3==3?"🎉":s3==2?"👏":"💪"}</div><h1>${sc} dari ${Q.length} benar</h1><div class="st">${stars(s3)}</div><p>${s3==3?"Luar biasa! Kamu hebat sekali!":s3==2?"Bagus! Sedikit lagi sempurna.":"Tidak apa-apa. Ayo coba lagi!"}</p></div><button class="btn big" onclick="${qm?"mix()":"quiz()"}">Main Lagi dengan Soal Baru</button><button class="btn big ghost" onclick="home()">Kembali ke Beranda</button>`;
+    scrollTo(0,0);if(s3==3)burst();fx(s3>=2?"win":"ok");return;
+  }
+  const k=Q[qi];
+  A.v=`<button class="back" onclick="${qm?"home()":"mod()"}">← ${qm?"Beranda":"Materi"}</button><div class="sm">${qm?"Latihan Campur · ":""}Soal ${qi+1} dari ${Q.length}</div><div class="panel"><h2>${esc(k.pertanyaan)}</h2><button class="spk" onclick="hear(Q[qi].pertanyaan)" aria-label="Bacakan soal">🔊</button></div>`+
+  k.pilihan.map(p=>`<button class="opt" id="o${p.kode}" onclick="pick('${p.kode}')"><b>${p.kode}</b>${esc(p.teks)}</button>`).join("")+`<div id="fb"></div>`;
+  scrollTo(0,0);
+}
+function pick(c){
+  if(ans)return;ans=c;
+  const k=Q[qi],ok=c==k.jawabanBenar;if(ok){sc++;good()}fx(ok?"ok":"no");
+  document.getElementById("o"+k.jawabanBenar).classList.add("ok");
+  if(!ok)document.getElementById("o"+c).classList.add("no");
+  document.getElementById("fb").innerHTML=`<div class="panel ${ok?"g":"r"}"><b>${ok?"✅ Benar!":"❌ Belum tepat."}</b><p style="font-size:19px">${esc(k.penjelasan)}</p></div><button class="btn big" onclick="qi++;ans=null;q()">${qi==Q.length-1?"Lihat Hasil":"Soal Berikutnya →"}</button>`;
+  document.getElementById("fb").scrollIntoView({behavior:"smooth",block:"nearest"});
+}
+
+let R,ri,rs,ra,rt,W,wi,ws,wt,wp,C,cf,cm,cl,wg="susun";
+const WORDS=[["👕","baju","ba","ju"],["📚","buku","bu","ku"],["👀","mata","ma","ta"],["🐄","sapi","sa","pi"],["🦶","kaki","ka","ki"],["🧢","topi","to","pi"],["🐴","kuda","ku","da"],["🍞","roti","ro","ti"],["🪑","meja","me","ja"],["⚽","bola","bo","la"],["🦆","bebek","be","bek"],["🐔","ayam","a","yam"]];
+const AJAIB=[["Kamu ingin meminjam pensil teman.","Tolong"],["Teman membantumu mengambil buku.","Terima kasih"],["Kamu tidak sengaja menginjak kaki teman.","Maaf"],["Ibu memberimu permen.","Terima kasih"],["Kamu butuh bantuan membuka botol.","Tolong"],["Kamu merusak mainan adik.","Maaf"],["Kamu terlambat masuk kelas.","Maaf"],["Ayah mengantarmu ke sekolah.","Terima kasih"],["Kamu ingin Ibu mengambilkan air.","Tolong"],["Guru memujimu pintar.","Terima kasih"]];
+const GAMES=[
+{id:"huruf",ic:"🎯",c:"#ffd23f",n:"Tebak Huruf Depan",d:"Lihat gambar, pilih huruf depannya.",f:gHuruf},
+{id:"susun",ic:"🧩",c:"#34d399",n:"Susun Kata",d:"Susun suku kata menjadi kata.",f:gSusun},
+{id:"vokal",ic:"🔤",c:"#a78bfa",n:"Vokal atau Konsonan?",d:"Tebak jenis huruf.",f:gVokal},
+{id:"memori",ic:"🃏",c:"#60a5fa",n:"Kartu Memori",d:"Cocokkan gambar dengan katanya.",f:gMemori},
+{id:"dengar",ic:"👂",c:"#fb923c",n:"Dengar & Pilih",d:"Dengar kata, pilih gambarnya.",f:gDengar},
+{id:"ajaib",ic:"✨",c:"#f472b6",n:"Kata Ajaib",d:"Tolong, terima kasih, atau maaf?",f:gAjaib},
+{id:"eja",ic:"🔡",c:"#22d3ee",n:"Eja Kata",d:"Susun huruf menjadi kata.",f:gEja},
+{id:"kalimat",ic:"📝",c:"#f87171",n:"Kalimat Acak",d:"Susun kata menjadi kalimat.",f:gKalimat},
+{id:"tanda",ic:"❓",c:"#c084fc",n:"Titik atau Tanya?",d:"Pilih tanda baca yang tepat.",f:gTanda}];
+function games(){
+  A.v=`<button class="back" onclick="home()">← Beranda</button><h1>Main Yuk!</h1>`+GAMES.map(g=>`<button class="card" onclick="GAMES.find(x=>x.id=='${g.id}').f()"><span class="ic" style="background:${g.c}">${g.ic}</span><span class="tx"><b>${g.n}</b><em>${g.d}</em>${S["g_"+g.id]!=null?`<span class="ch">Terbaik: ${S["g_"+g.id]}${g.id=="memori"?" langkah":""}</span>`:""}</span></button>`).join("");
+  scrollTo(0,0);
+}
+function endG(n,title,s,hi=1){
+  const p=S["g_"+n];S["g_"+n]=p==null?s:hi?Math.max(p,s):Math.min(p,s);save();
+  A.v=`<div class="panel c"><div class="big">🏆</div><h1>${title}</h1><p>Hebat! Ayo main lagi.</p></div><button class="btn big" onclick="GAMES.find(x=>x.id=='${n}').f()">Main Lagi</button><button class="btn big ghost" onclick="games()">Pilih Game Lain</button>`;
+  scrollTo(0,0);burst();fx("win");
+}
+function fb(ok,ex,nx,l){
+  const e=document.getElementById("fb");
+  e.innerHTML=`<div class="panel ${ok?"g":"r"}"><b>${ok?"✅ Benar!":"❌ Hampir!"}</b> ${ex}</div><button class="btn big" onclick="${nx}">${l?"Lihat Hasil":"Lanjut →"}</button>`;
+  e.scrollIntoView({behavior:"smooth",block:"nearest"});
+}
+function run(n,title,rounds){R=rounds;ri=0;rs=0;ra=0;rt=title;rn=n;rr()}
+let rn;
+function rr(){
+  if(ri>=R.length){endG(rn,`Skor: ${rs} dari ${R.length}`,rs);return}
+  const r=R[ri];
+  A.v=`<button class="back" onclick="games()">← Pilih Game</button><div class="sm">${rt} · Soal ${ri+1} dari ${R.length} · Skor ${rs}</div><div class="panel c">${r.head}${r.say?`<br><button class="spk" onclick="hear(R[ri].say)" aria-label="Dengarkan">🔊 Dengarkan</button>`:""}</div><div class="${r.row?"row":""}">`+r.opts.map((o,i)=>`<button class="opt${r.row?" lt":""}" onclick="rp(this,${i})">${o.t}</button>`).join("")+`</div><div id="fb"></div>`;
+  if(r.say)say(r.say);
+  scrollTo(0,0);
+}
+function rp(b,i){
+  if(ra)return;ra=1;
+  const r=R[ri],ok=r.opts[i].ok;if(ok){rs++;good()}fx(ok?"ok":"no");
+  b.classList.add(ok?"ok":"no");
+  if(!ok)document.querySelectorAll(".opt")[r.opts.findIndex(o=>o.ok)].classList.add("ok");
+  fb(ok,r.ex,"ri++;ra=0;rr()",ri==R.length-1);
+}
+function gHuruf(){
+  const L="ABDGHIKLMNPRSTUW";
+  run("huruf","Tebak Huruf Depan",shuffle(ITEMS).slice(0,10).map(it=>{
+    let o=[it[2]];while(o.length<3){const x=L[Math.floor(Math.random()*L.length)];if(!o.includes(x))o.push(x)}
+    return{head:`<div class="big" style="font-size:92px">${it[0]}</div><h1>${it[1]}</h1><h2>Huruf depannya apa?</h2>`,say:it[1],row:1,opts:shuffle(o).map(x=>({t:x,ok:x==it[2]})),ex:`${it[1]} diawali huruf ${it[2]}.`}}));
+}
+function gVokal(){
+  run("vokal","Vokal atau Konsonan?",shuffle("ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("")).slice(0,10).map(l=>{
+    const v="AIUEO".includes(l);
+    return{head:`<div class="big" style="font-size:96px">${l}</div><h2>Huruf apakah ini?</h2>`,row:1,opts:[{t:"Vokal",ok:v},{t:"Konsonan",ok:!v}],ex:`${l} adalah huruf ${v?"vokal":"konsonan"}.`}}));
+}
+function gDengar(){
+  run("dengar","Dengar & Pilih",shuffle(ITEMS).slice(0,10).map(it=>({
+    head:`<h2>Dengarkan kata ini</h2><div class="big">🔊</div>`,say:it[1],
+    opts:shuffle([it,...shuffle(ITEMS.filter(x=>x[1]!=it[1])).slice(0,2)]).map(x=>({t:`${x[0]} ${x[1]}`,ok:x[1]==it[1]})),ex:`Kata yang kamu dengar: ${it[1]}.`})));
+}
+function gAjaib(){
+  run("ajaib","Kata Ajaib",shuffle(AJAIB).slice(0,8).map(a=>({
+    head:`<div class="big">✨</div><h2>${a[0]}</h2><div class="sm">Kata ajaib apa yang tepat?</div>`,
+    opts:["Tolong","Terima kasih","Maaf"].map(x=>({t:x,ok:x==a[1]})),ex:`Kata ajaibnya: ${a[1]}.`})));
+}
+const WG={susun:["Susun Kata","Susun suku kata menjadi kata"],eja:["Eja Kata","Susun huruf menjadi kata"],kalimat:["Kalimat Acak","Susun kata menjadi kalimat"]};
+const KAL=[["🍚","Ibu masak nasi."],["📖","Ayah baca buku."],["🍞","Adik makan roti."],["⚽","Aku suka bola."],["✉️","Kakak menulis surat."],["🧢","Ani memakai topi."],["🥛","Kucing minum susu."],["🎒","Budi membawa tas."],["🧹","Ibu menyapu lantai."],["🌽","Ayam makan jagung."]];
+const TANDA=[["Siapa namamu",1],["Ani makan nasi",0],["Itu apa",1],["Ibu pergi ke pasar",0],["Di mana bukumu",1],["Adik tidur",0],["Kapan kamu pulang",1],["Ayah membaca koran",0],["Mengapa langit biru",1],["Aku suka menggambar",0]];
+function gSusun(){wg="susun";W=shuffle(WORDS).slice(0,8);wi=0;ws=0;wn()}
+function gEja(){wg="eja";W=shuffle(WORDS.filter(w=>w[1].length<=5)).slice(0,8).map(w=>[w[0],w[1],...w[1].split("")]);wi=0;ws=0;wn()}
+function gKalimat(){wg="kalimat";W=shuffle(KAL).slice(0,6).map(k=>[k[0],k[1],...k[1].split(" ")]);wi=0;ws=0;wn()}
+function gTanda(){
+  run("tanda","Titik atau Tanya?",shuffle(TANDA).slice(0,10).map(t=>{
+    const q=t[1];
+    return{head:`<h2>Tanda baca apa di akhir kalimat ini?</h2><h1 style="font-size:32px">${esc(t[0])} <span style="color:var(--pri)">▢</span></h1>`,say:t[0],
+      opts:shuffle([{t:"Titik ( . )",ok:!q},{t:"Tanda tanya ( ? )",ok:!!q}]),
+      ex:`${t[0]}${q?"?":"."} Kalimat ${q?"tanya":"cerita"} diakhiri ${q?"tanda tanya (?)":"titik (.)"}.`}}));
+}
+function wn(){
+  if(wi>=W.length){endG(wg,`Skor: ${ws} dari ${W.length}`,ws);return}
+  wt=shuffle(W[wi].slice(2));wp=[];wr();
+}
+function wr(){
+  const w=W[wi],n=w.length-2,k=wg=="kalimat",e=wg=="eja";
+  A.v=`<button class="back" onclick="games()">← Pilih Game</button><div class="sm">${WG[wg][0]} · Soal ${wi+1} dari ${W.length} · Skor ${ws}</div><div class="panel c"><div class="big">${w[0]}</div><h2>${WG[wg][1]}</h2>${k?"":`<button class="spk" onclick="hear('${w[1]}')" aria-label="Dengarkan kata">🔊</button>`}<div class="row" style="justify-content:center;margin-top:10px">${Array.from({length:n},(_,i)=>`<div class="slot${k?" wd":e?" lt":""}">${wp[i]!=null?esc(wt[wp[i]]):""}</div>`).join("")}</div></div><div class="row" style="justify-content:center">${wt.map((s,i)=>`<button class="opt lt${k?" wd":""}" ${wp.includes(i)?"disabled":""} onclick="wk(${i})">${esc(s)}</button>`).join("")}</div><div class="nav"><button class="btn ghost" ${wp.length&&wp.length<n?"":"disabled"} onclick="wp.pop();wr()">⌫ Hapus</button></div><div id="fb"></div>`;
+}
+function wk(i){
+  const w=W[wi],n=w.length-2;
+  if(wp.length>=n)return;
+  fx("tap");wp.push(i);wr();
+  if(wp.length==n){
+    const ok=wp.map(j=>wt[j]).join(wg=="kalimat"?" ":"")==w[1];
+    if(ok){ws++;good()}
+    fx(ok?"ok":"no");if(ok)say(w[1]);
+    fb(ok,ok?`${wg=="kalimat"?"Kalimatnya":"Katanya"}: ${w[1]}`:`Jawaban yang benar: ${w[1]}`,"wi++;wn()",wi==W.length-1);
+  }
+}
+function gMemori(){
+  const p=shuffle(ITEMS).slice(0,6);
+  C=shuffle(p.flatMap((x,k)=>[{k,e:x[0]},{k,e:x[1],w:1}])).map(c=>({...c,o:0,d:0}));
+  cf=[];cm=0;cl=0;mr();
+}
+function mr(){
+  A.v=`<button class="back" onclick="games()">← Pilih Game</button><div class="sm">Kartu Memori · Langkah ${cm}</div><div class="panel c"><h2>Cari pasangan gambar dan katanya</h2></div><div class="mem">${C.map((c,i)=>`<button class="mc${c.o||c.d?" o":""}${c.w?" w":""}${c.d?" d":""}" onclick="mf(${i})">${c.o||c.d?c.e:"?"}</button>`).join("")}</div>`;
+}
+function mf(i){
+  const c=C[i];if(cl||c.o||c.d)return;
+  c.o=1;cf.push(i);mr();
+  if(cf.length==2){
+    cm++;cl=1;const[a,b]=cf.map(j=>C[j]),m=a.k==b.k;
+    setTimeout(()=>{if(m){a.d=b.d=1;fx("ok")}a.o=b.o=0;cf=[];cl=0;mr();if(C.every(x=>x.d))endG("memori",`Selesai dalam ${cm} langkah!`,cm,0)},m?450:900);
+  }
+}
+const TEMA=["Diriku","Kegemaranku","Kegiatanku","Keluargaku","Pengalamanku","Lingkungan Bersih, Sehat, dan Asri","Benda, Hewan, dan Tanaman di Sekitarku","Peristiwa Alam"];
+const BOOKS=TEMA.flatMap((t,i)=>[["siswa","Buku Siswa","#5b3fe0"],["guru","Buku Guru","#f59e0b"]].map(k=>({n:`Tema ${i+1}: ${t}`,d:`Buku Tematik Terpadu K13 ${k[1]} untuk SD kelas 1.`,g:k[0],c:k[2],ic:["1️⃣","2️⃣","3️⃣","4️⃣","5️⃣","6️⃣","7️⃣","8️⃣"][i],url:""})));
+// Isi url tiap buku dengan tautan Google Drive, mis. url:"https://drive.google.com/..."
+let bq="",bf="all",tt,rc=0;
+function fl(){const f=S.fav2||[];return BOOKS.map((b,i)=>({...b,i})).filter(b=>(bf=="all"||(bf=="fav"?f.includes(b.i):b.g==bf))&&(b.n+" "+b.d).toLowerCase().includes(bq.trim().toLowerCase()))}
+function bc(){
+  const l=fl(),f=S.fav2||[];
+  return l.length?l.map(b=>`<div class="card"><span class="ic" style="background:${b.c}">${b.ic}</span><span class="tx"><span class="tag">${b.g=="siswa"?"Buku Siswa":"Buku Guru"}</span><b>${b.n}</b><em>${b.d}</em></span><span class="act"><button class="star" onclick="fv(${b.i})" aria-label="Favorit">${f.includes(b.i)?"★":"☆"}</button><button class="open" onclick="ob(${b.i})">${((S.bp||{})[b.i]||0)>0?"Lanjut ›":"Baca ›"}</button></span></div>`).join(""):`<div class="panel c">Buku tidak ditemukan. Coba kata kunci lain.</div>`;
+}
+function bl(){document.getElementById("bl").innerHTML=bc()}
+function buku(){
+  TAB="buku";
+  A.v=`<h1>Buku K13 Kelas 1 SD</h1><input class="srch" aria-label="Cari buku" placeholder="🔍 Cari buku, mis. Tema 3 atau Diriku" value="${esc(bq)}" oninput="bq=this.value;bl()"><div class="chips">${[["all","Semua"],["siswa","Buku Siswa"],["guru","Buku Guru"],["fav","⭐ Favorit"]].map(c=>`<button class="chip${bf==c[0]?" on":""}" onclick="bf='${c[0]}';buku()">${c[1]}</button>`).join("")}</div><div class="fact">ℹ️ Isi buku bisa dibaca langsung di aplikasi, lengkap dengan suara bacaan. Tidak perlu internet atau Google Drive.</div><div id="bl">${bc()}</div>`;
+  scrollTo(0,0);
+}
+function fv(i){const f=S.fav2||[];S.fav2=f.includes(i)?f.filter(x=>x!=i):[...f,i];save();bl()}
+/* ===== ISI BUKU: dibaca langsung di aplikasi (tanpa internet/Drive), semua perangkat ===== */
+/* Kode field: j=judul subtema, b=bacaan, p=penjelasan, k=kata baru, g=kegiatan, t=tanya jawab, s=kesulitan umum */
+const T=[
+{ik:"🙋",ring:"Dalam tema ini kamu mengenal dirimu sendiri: namamu, bagian-bagian tubuhmu, dan cara merawat tubuh agar sehat.",
+ sub:[
+ {j:"Aku dan Namaku",
+  b:["Setiap anak punya nama.","Namaku Sinta. Aku berumur tujuh tahun.","Nama diberikan oleh Ayah dan Ibu.","Nama adalah tanda agar orang mudah memanggilku.","Aku senang jika dipanggil dengan namaku.","Aku juga memanggil temanku dengan nama yang baik."],
+  p:["Nama adalah sebutan untuk seseorang. Dengan nama, kita bisa saling memanggil dan saling mengenal.","Setiap orang punya nama yang berbeda-beda, misalnya Budi, Dina, Rudi, atau Sinta.","Saat berkenalan, kita menyebut nama dengan jelas. Contohnya: Namaku Sinta Maharani.","Selain nama, kita juga bisa menyebut umur, misalnya: Umurku tujuh tahun.","Kita tidak boleh memanggil teman dengan ejekan, karena ejekan membuat teman sedih."],
+  k:[["nama","sebutan untuk seseorang"],["berkenalan","saling mengetahui nama dan diri"],["umur","banyaknya tahun usia kita"]],
+  g:"Berdirilah di depan kelas. Katakan: Namaku ..., umurku ... tahun. Lalu minta temanmu menirukan namamu.",
+  t:[["Siapa yang memberi kita nama?","Ayah dan Ibu, yaitu orang tua."],["Mengapa kita tidak boleh mengejek nama teman?","Karena ejekan membuat teman sedih."]],
+  s:"Sebagian anak malu menyebut nama. Biarkan anak berlatih berpasangan lebih dulu sebelum tampil di depan kelas."},
+ {j:"Tubuhku",
+  b:["Tubuhku punya banyak bagian.","Aku punya dua mata untuk melihat.","Aku punya dua telinga untuk mendengar.","Aku punya satu hidung untuk mencium bau.","Aku punya satu mulut untuk berbicara dan makan.","Aku punya dua tangan dan dua kaki."],
+  p:["Setiap bagian tubuh punya tugas. Mata untuk melihat, telinga untuk mendengar, hidung untuk mencium, lidah untuk merasakan, dan kulit untuk meraba.","Kelima hal itu disebut panca indra. Panca artinya lima.","Tangan dipakai untuk menulis, memegang, dan makan. Kaki dipakai untuk berjalan, berlari, dan menendang bola.","Semua bagian tubuh itu penting, jadi kita harus menjaganya agar tidak sakit atau terluka.","Ada anak yang tubuhnya berbeda dari kita. Kita tetap menghormati dan berteman dengan mereka."],
+  k:[["panca indra","lima alat indra: mata, telinga, hidung, lidah, kulit"],["meraba","merasakan sesuatu dengan kulit"],["mencium","mengenali bau dengan hidung"]],
+  g:"Mainkan permainan Simon Berkata. Guru berkata: Tunjuk hidungmu! Anak menunjuk hidungnya sambil berkata: Ini hidungku.",
+  t:[["Alat tubuh apa yang dipakai untuk mendengar?","Telinga."],["Sebutkan lima panca indra.","Mata, telinga, hidung, lidah, dan kulit."]],
+  s:"Anak sering tertukar antara mencium dan merasakan. Biarkan anak mencium bunga lalu mencicipi sedikit gula agar bedanya terasa."},
+ {j:"Merawat Diriku",
+  b:["Aku merawat tubuhku setiap hari.","Aku mandi dua kali sehari agar bersih.","Aku menyikat gigi sesudah makan dan sebelum tidur.","Aku mencuci tangan dengan sabun sebelum makan.","Aku makan sayur dan buah agar sehat.","Aku tidur cukup agar tubuhku kuat."],
+  p:["Merawat diri artinya menjaga tubuh agar bersih dan sehat.","Mandi membersihkan kotoran dan keringat. Gunakan sabun dan air bersih.","Menyikat gigi mencegah gigi berlubang. Sikat semua sisi gigi dengan pelan selama kira-kira dua menit.","Mencuci tangan dengan sabun menghilangkan kuman. Cuci juga sela-sela jari dan bagian bawah kuku.","Makan makanan bergizi seperti nasi, ikan, sayur, dan buah membuat tubuh tumbuh kuat. Bermain dan tidur cukup juga menjaga kesehatan."],
+  k:[["kuman","makhluk sangat kecil yang bisa membuat kita sakit"],["bergizi","baik untuk pertumbuhan tubuh"],["kebersihan","keadaan bersih"]],
+  g:"Praktikkan mencuci tangan: basahi tangan, beri sabun, gosok telapak, punggung tangan, sela jari, dan kuku, lalu bilas dan keringkan.",
+  t:[["Kapan kita mencuci tangan?","Sebelum makan, sesudah bermain, dan sesudah dari kamar mandi."],["Mengapa kita menyikat gigi?","Agar gigi bersih dan tidak berlubang."]],
+  s:"Anak sering mencuci tangan terlalu cepat. Ajak bernyanyi lagu pendek sambil menggosok agar waktunya cukup."}],
+ cer:["Pagi yang Cerah",["Sinta bangun pagi-pagi sekali.","Ia merapikan tempat tidurnya sendiri.","Lalu Sinta mandi dan menyikat gigi.","Ibu sudah menyiapkan nasi, telur, dan sayur.","Sebelum makan, Sinta mencuci tangan dengan sabun.","Ia makan dengan lahap dan menghabiskan sayurnya.","Sinta berpamitan kepada Ayah dan Ibu.","Ia berangkat ke sekolah dengan badan bersih dan hati gembira."],
+  "Anak yang merawat dirinya akan sehat dan senang belajar.",
+  [["Siapa tokoh dalam cerita?","Sinta."],["Apa yang Sinta lakukan sebelum makan?","Mencuci tangan dengan sabun."],["Bagaimana perasaan Sinta saat berangkat sekolah?","Gembira."]]],
+ lat:[["Mata untuk ...","melihat","Mata adalah alat indra untuk melihat."],["Kita menyikat gigi sebelum ...","tidur","Menyikat gigi sebelum tidur menjaga gigi tetap bersih sepanjang malam."],["Orang yang memberi nama kita adalah ...","orang tua","Nama diberikan oleh Ayah dan Ibu."],["Sebelum makan kita mencuci ...","tangan","Mencuci tangan menghilangkan kuman."],["Telinga untuk ...","mendengar","Telinga adalah alat indra untuk mendengar."]],
+ rang:["Setiap orang punya nama yang baik.","Tubuh punya bagian-bagian dengan tugas masing-masing.","Panca indra ada lima.","Kita merawat diri dengan mandi, sikat gigi, cuci tangan, makan sehat, dan tidur cukup."],
+ rem:"Gunakan kartu gambar bagian tubuh. Mulai dari tiga bagian saja, lalu tambah pelan-pelan.",
+ pen:"Minta anak menceritakan urutan kegiatan paginya memakai kata pertama, lalu, dan terakhir."},
+
+{ik:"🎨",ring:"Dalam tema ini kamu mengenal hobi, mainan, dan warna kesukaanmu, serta belajar bermain dengan teman.",
+ sub:[
+ {j:"Hobiku",
+  b:["Hobi adalah kegiatan yang aku suka.","Hobiku menggambar.","Hobi Budi bermain bola.","Hobi Dina menyanyi.","Kami senang melakukan hobi kami.","Hobi membuat hati gembira."],
+  p:["Hobi adalah kegiatan yang kita senangi dan kita lakukan di waktu luang.","Hobi setiap orang bisa berbeda. Ada yang suka menggambar, menyanyi, menari, membaca, berkebun, atau berolahraga.","Hobi yang baik membuat kita pandai, sehat, dan gembira.","Kita tetap harus membagi waktu. Selesaikan tugas dan belajar dulu, baru berhobi.","Kita menghargai hobi teman walaupun berbeda dengan hobi kita."],
+  k:[["hobi","kegiatan yang disukai"],["waktu luang","waktu setelah tugas selesai"],["menghargai","menganggap baik dan penting"]],
+  g:"Gambarlah kegiatan hobimu. Lalu ceritakan: Hobiku ..., aku suka karena ....",
+  t:[["Apa itu hobi?","Kegiatan yang kita suka."],["Kapan kita berhobi?","Saat waktu luang, setelah tugas selesai."]],
+  s:"Anak sering hanya menyebut satu kata. Pancing dengan pertanyaan: kamu suka karena apa?"},
+ {j:"Mainan Kesukaanku",
+  b:["Aku punya banyak mainan.","Mainan kesukaanku adalah bola.","Dina suka boneka dan balok.","Kami bermain bersama di halaman.","Setelah bermain, kami merapikan mainan.","Mainan disimpan di dalam kotak."],
+  p:["Mainan membuat kita senang. Ada bola, boneka, balok susun, mobil-mobilan, dan congklak.","Ada permainan tradisional seperti congklak, engklek, dan petak umpet. Permainan ini dimainkan beramai-ramai.","Saat bermain bersama, kita bergiliran dan tidak berebut. Jika ingin meminjam, kita berkata: Boleh aku pinjam?","Setelah bermain, mainan dirapikan dan disimpan di tempatnya agar tidak hilang atau rusak.","Mainan tidak harus mahal. Yang penting dimainkan dengan aman dan gembira."],
+  k:[["bergiliran","bermain satu per satu secara adil"],["tradisional","berasal dari kebiasaan turun-temurun"],["merapikan","menata kembali agar teratur"]],
+  g:"Bermain engklek atau petak umpet dengan teman. Ingat aturannya: bergiliran dan tidak curang.",
+  t:[["Sebutkan mainan tradisional yang kamu tahu.","Congklak, engklek, petak umpet."],["Apa yang dilakukan setelah bermain?","Merapikan mainan."]],
+  s:"Anak sering berebut mainan. Ajarkan kalimat Boleh aku pinjam? dan biasakan menunggu giliran."},
+ {j:"Warna Kesukaanku",
+  b:["Dunia penuh warna.","Ada merah, kuning, hijau, dan biru.","Apel berwarna merah.","Pisang berwarna kuning.","Daun berwarna hijau.","Warna kesukaanku biru seperti langit."],
+  p:["Warna membuat dunia indah. Warna dasar adalah merah, kuning, dan biru.","Jika kuning dan biru dicampur, hasilnya hijau. Jika merah dan kuning dicampur, hasilnya jingga. Jika merah dan biru dicampur, hasilnya ungu.","Kita bisa menyebut warna benda di sekitar, misalnya buku berwarna merah dan tas berwarna biru.","Setiap orang punya warna kesukaan sendiri, dan itu tidak apa-apa.","Saat mewarnai, kita mewarnai dengan rapi dan tidak keluar garis."],
+  k:[["warna dasar","warna yang menjadi bahan campuran"],["campuran","gabungan beberapa warna"],["jingga","warna seperti kulit jeruk"]],
+  g:"Campurkan dua warna cat atau krayon di kertas. Tulis warna apa yang terbentuk.",
+  t:[["Kuning dicampur biru menjadi warna apa?","Hijau."],["Sebutkan tiga warna dasar.","Merah, kuning, dan biru."]],
+  s:"Anak kadang menyebut jingga sebagai oranye. Perkenalkan keduanya, lalu tegaskan jingga sebagai kata baku."}],
+ cer:["Bermain Bersama",["Sore itu Budi bermain di halaman.","Budi membawa bola yang berwarna merah.","Dina datang membawa tali karet.","Dina ingin bermain bola juga.","Budi berkata, Silakan, ayo kita bermain bersama.","Setelah itu Budi ikut melompat tali karet.","Mereka bermain bergantian dan tertawa gembira.","Saat hari mulai gelap, mereka merapikan mainan dan pulang."],
+  "Bermain bersama dan berbagi membuat kita punya banyak teman.",
+  [["Apa yang dibawa Budi?","Bola berwarna merah."],["Apa yang dibawa Dina?","Tali karet."],["Apa yang dilakukan sebelum pulang?","Merapikan mainan."]]],
+ lat:[["Kegiatan yang kita suka disebut ...","hobi","Hobi adalah kegiatan yang disukai."],["Kuning dan biru dicampur menjadi ...","hijau","Campuran kuning dan biru adalah hijau."],["Setelah bermain, mainan harus ...","dirapikan","Agar tidak hilang dan tempat tetap rapi."],["Bermain dengan teman harus ...","bergiliran","Bergiliran membuat permainan adil."],["Saat dipinjami mainan kita berkata ...","terima kasih","Terima kasih adalah kata ajaib untuk bersyukur."]],
+ rang:["Hobi adalah kegiatan yang disukai.","Permainan lebih seru jika bermain bersama dan bergiliran.","Warna dasar adalah merah, kuning, dan biru.","Setelah bermain, mainan dirapikan."],
+ rem:"Kenalkan tiga warna dasar dengan benda nyata lebih dulu, lalu lanjut ke campuran warna.",
+ pen:"Minta anak membuat campuran warna sendiri, lalu memberi nama dan menceritakannya."},
+
+{ik:"🏫",ring:"Dalam tema ini kamu belajar kegiatan sehari-hari di rumah dan di sekolah, serta bersikap tertib dan disiplin.",
+ sub:[
+ {j:"Kegiatan di Rumah",
+  b:["Pagi hari aku bangun dan merapikan tempat tidur.","Aku mandi lalu sarapan bersama keluarga.","Siang hari aku makan dan beristirahat.","Sore hari aku membantu Ibu menyiram bunga.","Malam hari aku belajar.","Setelah itu aku tidur dengan nyenyak."],
+  p:["Kegiatan sehari-hari di rumah dilakukan berurutan dari pagi sampai malam.","Urutannya: bangun tidur, merapikan tempat tidur, mandi, sarapan, berangkat sekolah, pulang, makan siang, istirahat, bermain, belajar, lalu tidur.","Kegiatan yang teratur membuat hari kita lancar dan tubuh sehat.","Anak boleh membantu pekerjaan ringan seperti menyapu, menyiram tanaman, dan membereskan mainan.","Anak seusiamu perlu tidur sembilan sampai sebelas jam setiap malam supaya segar saat bangun."],
+  k:[["kegiatan","hal yang dikerjakan"],["berurutan","satu demi satu menurut urutannya"],["teratur","sesuai aturan dan jadwal"]],
+  g:"Susun gambar kegiatan harian: bangun tidur, mandi, makan, sekolah, belajar, tidur.",
+  t:[["Apa kegiatan pertama setelah bangun tidur?","Merapikan tempat tidur."],["Pekerjaan ringan apa yang bisa kamu bantu?","Menyapu, menyiram tanaman, merapikan mainan."]],
+  s:"Anak sulit menyusun urutan. Gunakan kartu gambar dan kata pertama, lalu, kemudian, terakhir."},
+ {j:"Kegiatan di Sekolah",
+  b:["Aku berangkat sekolah tepat waktu.","Aku memberi salam kepada Bu Guru.","Aku duduk dengan tenang di kelas.","Aku mendengarkan guru dan menulis.","Saat istirahat, aku bermain dengan teman.","Setelah pulang, aku mengucapkan salam."],
+  p:["Di sekolah kita belajar, bermain, dan berteman. Setiap kegiatan punya aturan.","Saat tiba, kita memberi salam kepada guru dan teman dengan sopan.","Saat belajar, kita duduk tenang, mendengarkan, dan mengangkat tangan jika ingin bertanya.","Saat istirahat, kita makan jajanan sehat, bermain, dan tidak bertengkar.","Sebelum pulang, kita merapikan meja, membereskan alat tulis, dan berdoa."],
+  k:[["salam","ucapan saat bertemu atau berpisah"],["mengangkat tangan","tanda ingin bertanya atau menjawab"],["tenang","tidak ribut"]],
+  g:"Bermain peran: satu anak menjadi guru, yang lain belajar. Latih mengangkat tangan sebelum bicara.",
+  t:[["Apa yang dilakukan sebelum bertanya?","Mengangkat tangan."],["Apa yang dilakukan sebelum pulang?","Merapikan meja dan berdoa."]],
+  s:"Anak sering berbicara serentak. Sepakati isyarat tangan dan puji anak yang menunggu giliran."},
+ {j:"Tertib dan Disiplin",
+  b:["Disiplin artinya patuh pada aturan.","Aku datang tepat waktu.","Aku mengantre saat membeli jajan.","Aku membuang sampah pada tempatnya.","Aku memakai seragam dengan rapi.","Anak disiplin disayang guru dan teman."],
+  p:["Tertib artinya teratur dan mengikuti aturan. Disiplin artinya patuh dan taat pada aturan.","Contoh tertib: mengantre, berjalan dengan tenang, dan tidak berlari di dalam kelas.","Contoh disiplin: berangkat tepat waktu, mengerjakan tugas, dan mengumpulkannya.","Aturan dibuat agar semua orang aman dan nyaman, bukan untuk menyulitkan kita.","Jika terlanjur melanggar, kita meminta maaf dan berusaha tidak mengulanginya."],
+  k:[["tertib","teratur dan sesuai aturan"],["disiplin","patuh pada aturan"],["mengantre","berdiri berbaris menunggu giliran"]],
+  g:"Latih mengantre untuk cuci tangan dengan tertib. Hitung bersama berapa anak yang tertib.",
+  t:[["Apa arti mengantre?","Berbaris menunggu giliran."],["Mengapa ada aturan?","Agar semua orang aman dan nyaman."]],
+  s:"Anak mudah lupa aturan. Pasang gambar aturan kelas dan ingatkan dengan kalimat yang positif."}],
+ cer:["Hari Pertama di Kelas",["Hari ini hari pertama Dina masuk kelas satu.","Dina berangkat bersama Ayah dan tiba tepat waktu.","Di depan kelas, Dina berkata, Selamat pagi, Bu.","Bu Guru tersenyum dan mempersilakan Dina masuk.","Dina duduk di bangku dekat jendela.","Ia berkenalan dengan teman sebangkunya, Rudi.","Saat Bu Guru bertanya, Dina mengangkat tangan.","Pulang sekolah, Dina menceritakan harinya kepada Ibu."],
+  "Sikap sopan dan tertib membuat hari di sekolah menyenangkan.",
+  [["Siapa teman sebangku Dina?","Rudi."],["Apa yang Dina ucapkan kepada Bu Guru?","Selamat pagi, Bu."],["Apa yang Dina lakukan saat ingin menjawab?","Mengangkat tangan."]]],
+ lat:[["Kita berangkat sekolah tepat ...","waktu","Datang tepat waktu adalah contoh disiplin."],["Sampah dibuang pada ...","tempatnya","Agar lingkungan tetap bersih."],["Sebelum bertanya kita ... tangan","mengangkat","Mengangkat tangan adalah cara bertanya yang sopan."],["Menunggu giliran disebut ...","mengantre","Mengantre membuat semua orang mendapat giliran."],["Anak yang patuh pada aturan disebut anak ...","disiplin","Disiplin artinya patuh pada aturan."]],
+ rang:["Kegiatan harian dilakukan berurutan.","Di sekolah kita belajar, bermain, dan berteman.","Tertib dan disiplin membuat semua orang nyaman.","Di rumah, kita membantu pekerjaan ringan."],
+ rem:"Gunakan kartu gambar kegiatan harian dan susun bersama anak, satu kegiatan demi satu kegiatan.",
+ pen:"Minta anak membuat jadwal harian sederhana dengan gambar dan menceritakannya."},
+
+{ik:"👨‍👩‍👧",ring:"Dalam tema ini kamu mengenal anggota keluarga, tugas masing-masing, dan cara menghormati orang tua.",
+ sub:[
+ {j:"Anggota Keluargaku",
+  b:["Keluargaku terdiri atas Ayah, Ibu, Kakak, dan aku.","Ayah bekerja untuk mencari nafkah.","Ibu memasak dan merawat kami.","Kakak membantuku belajar.","Kakek dan Nenek tinggal di desa.","Aku sayang kepada seluruh keluargaku."],
+  p:["Keluarga adalah orang-orang yang tinggal bersama dan saling menyayangi.","Keluarga inti terdiri atas ayah, ibu, dan anak. Keluarga besar juga meliputi kakek, nenek, paman, bibi, dan sepupu.","Setiap keluarga berbeda. Ada yang anggotanya banyak, ada yang sedikit, dan semuanya berharga.","Kita memanggil anggota keluarga dengan sebutan yang benar: ayah, ibu, kakak, adik, kakek, nenek.","Keluarga memberi kita makanan, tempat tinggal, kasih sayang, dan perlindungan."],
+  k:[["keluarga inti","ayah, ibu, dan anak"],["nafkah","uang untuk kebutuhan hidup"],["sepupu","anak dari paman atau bibi"]],
+  g:"Gambar keluargamu dan tulis nama tiap anggota. Ceritakan gambarmu kepada teman.",
+  t:[["Siapa saja keluarga inti?","Ayah, ibu, dan anak."],["Apa yang diberikan keluarga kepada kita?","Kasih sayang, makanan, tempat tinggal, dan perlindungan."]],
+  s:"Keluarga anak bisa berbeda-beda, misalnya diasuh nenek. Gunakan pertanyaan terbuka: siapa yang tinggal di rumahmu?"},
+ {j:"Tugas di Rumah",
+  b:["Setiap anggota keluarga punya tugas.","Ayah memperbaiki barang yang rusak.","Ibu menyiapkan makanan.","Kakak menyapu halaman.","Aku merapikan sepatu dan mainan.","Kami saling membantu."],
+  p:["Tugas adalah pekerjaan yang menjadi tanggung jawab kita.","Jika semua anggota keluarga bekerja sama, pekerjaan terasa ringan dan rumah menjadi nyaman.","Anak kecil bisa membantu dengan pekerjaan ringan: merapikan tempat tidur, menaruh pakaian kotor di keranjang, dan menyusun sepatu.","Kita mengerjakan tugas tanpa harus disuruh berkali-kali, dan mengerjakannya dengan senang hati.","Setelah selesai, kita melapor dengan sopan: Sudah selesai, Bu."],
+  k:[["tugas","pekerjaan yang menjadi tanggung jawab"],["bekerja sama","mengerjakan sesuatu bersama-sama"],["tanggung jawab","kewajiban yang harus dilakukan"]],
+  g:"Buat jadwal tugas seminggu: satu tugas ringan untuk setiap hari, lalu tempel di rumah.",
+  t:[["Tugas apa yang bisa kamu lakukan di rumah?","Merapikan sepatu, mainan, dan tempat tidur."],["Apa manfaat bekerja sama?","Pekerjaan jadi ringan dan rumah nyaman."]],
+  s:"Anak mudah bosan. Berikan pujian atau stiker setelah tugas selesai."},
+ {j:"Menghormati Orang Tua",
+  b:["Aku menghormati Ayah dan Ibu.","Aku mencium tangan saat berpamitan.","Aku berbicara dengan sopan.","Aku menurut jika diberi nasihat.","Aku berkata terima kasih jika dibantu.","Orang tua sayang kepada anak yang sopan."],
+  p:["Menghormati artinya bersikap sopan dan menghargai. Orang tua sudah merawat kita sejak bayi.","Cara menghormati: mencium tangan, berbicara lembut, mendengarkan nasihat, dan tidak membantah dengan kasar.","Jika ingin sesuatu, kita memintanya baik-baik dengan kata tolong.","Jika berbuat salah, kita meminta maaf dengan jujur.","Kita juga menyayangi adik dan menghormati kakak, kakek, dan nenek."],
+  k:[["menghormati","bersikap sopan dan menghargai"],["nasihat","kata-kata baik yang mengajak berbuat baik"],["membantah","menjawab dengan menolak secara kasar"]],
+  g:"Bermain peran: berpamitan kepada orang tua dengan mengucap salam, lalu berganti peran.",
+  t:[["Apa yang kamu lakukan saat berpamitan?","Mengucap salam dan mencium tangan."],["Bagaimana cara meminta bantuan?","Berkata tolong dengan sopan."]],
+  s:"Kebiasaan memberi salam berbeda di tiap keluarga. Tekankan sikap sopan, bukan hanya caranya."}],
+ cer:["Makan Bersama",["Sore itu keluarga Ani bersiap makan bersama.","Ibu memasak sayur bayam dan ikan goreng.","Ayah menyiapkan air minum dan gelas.","Kakak menata piring di atas meja.","Ani membantu membawa sendok dan garpu.","Sebelum makan, mereka berdoa bersama.","Semua makan dengan tenang dan gembira.","Sesudah makan, Ani berkata, Terima kasih, Bu, makanannya enak."],
+  "Keluarga yang saling membantu dan bersyukur hidup rukun.",
+  [["Apa yang dimasak Ibu?","Sayur bayam dan ikan goreng."],["Apa yang dilakukan sebelum makan?","Berdoa bersama."],["Apa yang diucapkan Ani sesudah makan?","Terima kasih, Bu, makanannya enak."]]],
+ lat:[["Ayah, Ibu, dan anak adalah keluarga ...","inti","Keluarga inti terdiri atas ayah, ibu, dan anak."],["Pekerjaan yang menjadi kewajiban kita disebut ...","tugas","Tugas adalah pekerjaan yang menjadi tanggung jawab kita."],["Kita ... orang tua dengan bersikap sopan","menghormati","Menghormati artinya bersikap sopan dan menghargai."],["Bekerja sama membuat pekerjaan menjadi ...","ringan","Pekerjaan yang dikerjakan bersama terasa lebih ringan."],["Sesudah dibantu kita berkata ...","terima kasih","Terima kasih adalah ucapan syukur kepada orang yang membantu."]],
+ rang:["Keluarga adalah orang-orang yang saling menyayangi.","Setiap anggota keluarga punya tugas.","Bekerja sama membuat pekerjaan ringan.","Kita menghormati orang tua dengan sikap yang sopan."],
+ rem:"Gunakan foto atau gambar keluarga anak, lalu minta anak menunjuk dan menyebut tiap anggota.",
+ pen:"Minta anak membuat kartu ucapan terima kasih untuk orang tua dan membacakannya."}
+,
+{ik:"🎒",ring:"Dalam tema ini kamu belajar menceritakan pengalaman dengan urutan yang benar dan berani mencoba hal baru.",
+ sub:[
+ {j:"Pengalaman Liburan",
+  b:["Liburan lalu aku pergi ke rumah nenek.","Kami naik kereta api.","Di sana aku bermain di kebun.","Aku memetik jeruk bersama Kakek.","Aku senang sekali.","Liburan itu tidak akan kulupakan."],
+  p:["Pengalaman adalah hal yang pernah kita lihat, dengar, atau lakukan.","Saat menceritakan pengalaman, sebutkan siapa, ke mana, apa yang dilakukan, dan bagaimana perasaanmu.","Gunakan kata waktu seperti kemarin, tadi pagi, dan liburan lalu.","Kita bisa menceritakan pengalaman dengan lisan atau dengan gambar.","Pengalaman menyenangkan membuat kita gembira. Pengalaman yang tidak menyenangkan mengajarkan kita untuk berhati-hati."],
+  k:[["pengalaman","hal yang pernah dialami"],["liburan","waktu libur dari sekolah"],["kenangan","hal yang selalu diingat"]],
+  g:"Ceritakan liburan terakhirmu kepada teman: ke mana, dengan siapa, dan apa yang kamu lakukan.",
+  t:[["Apa itu pengalaman?","Hal yang pernah kita alami."],["Apa saja yang diceritakan dalam pengalaman?","Siapa, ke mana, apa yang dilakukan, dan perasaan kita."]],
+  s:"Anak sering berhenti setelah satu kalimat. Beri pertanyaan pemandu: lalu apa? setelah itu bagaimana?"},
+ {j:"Pengalaman Baru",
+  b:["Hari ini aku belajar naik sepeda.","Mula-mula aku takut.","Aku jatuh dan lututku lecet.","Ayah berkata, Ayo coba lagi.","Aku mencoba lagi dan lagi.","Akhirnya aku bisa naik sepeda."],
+  p:["Pengalaman baru adalah hal yang pertama kali kita lakukan, seperti naik sepeda atau berenang.","Rasa takut itu wajar. Dengan berlatih sedikit demi sedikit, rasa takut akan berkurang.","Jatuh atau salah bukan berarti gagal. Kita boleh mencoba lagi.","Mintalah bantuan orang dewasa saat mencoba hal yang berbahaya, dan pakai alat pengaman seperti helm.","Berani mencoba dan tidak mudah menyerah adalah sikap yang baik."],
+  k:[["lecet","kulit terluka ringan karena tergores"],["pantang menyerah","terus berusaha"],["helm","pelindung kepala"]],
+  g:"Ceritakan satu hal baru yang ingin kamu coba dan siapa yang bisa membantumu.",
+  t:[["Mengapa kita memakai helm?","Untuk melindungi kepala."],["Apa yang dilakukan setelah jatuh?","Mencoba lagi dengan hati-hati."]],
+  s:"Anak takut salah. Puji usaha anak, bukan hanya hasilnya."},
+ {j:"Bercerita Berurutan",
+  b:["Pertama, aku bangun tidur.","Kemudian, aku mandi dan berpakaian.","Lalu, aku sarapan bersama keluarga.","Setelah itu, aku berangkat sekolah.","Terakhir, aku tiba di kelas dan belajar.","Ceritaku sudah berurutan."],
+  p:["Cerita yang baik berurutan: ada bagian awal, tengah, dan akhir.","Kata penghubung urutan membantu kita: pertama, kemudian, lalu, setelah itu, dan terakhir.","Jika urutannya terbalik, cerita menjadi membingungkan. Misalnya makan dulu baru memasak.","Kita dapat berlatih dengan menyusun gambar bernomor lalu menceritakannya.","Bercerita dengan suara jelas, kalimat lengkap, dan sambil melihat pendengar."],
+  k:[["berurutan","satu demi satu sesuai urutan"],["pertama","yang paling awal"],["terakhir","yang paling akhir"]],
+  g:"Susun empat gambar acak menjadi cerita yang benar, lalu ceritakan dengan kata pertama, lalu, dan terakhir.",
+  t:[["Sebutkan kata penghubung urutan.","Pertama, kemudian, lalu, setelah itu, terakhir."],["Bagian cerita apa saja?","Awal, tengah, dan akhir."]],
+  s:"Anak suka melewatkan bagian tengah cerita. Gunakan pertanyaan: lalu bagaimana?"}],
+ cer:["Belajar Bersepeda",["Rudi sangat ingin bisa naik sepeda.","Hari Minggu pagi Ayah mengajaknya ke lapangan.","Rudi memakai helm agar kepalanya aman.","Ayah memegang sepeda dari belakang.","Rudi mengayuh pelan-pelan, tetapi ia jatuh.","Lututnya lecet dan ia hampir menangis.","Ayah berkata, Tidak apa-apa, ayo coba lagi.","Akhirnya Rudi bisa mengayuh sendiri dan ia berseru gembira."],
+  "Jangan mudah menyerah. Setiap latihan membuat kita makin mahir.",
+  [["Siapa yang menemani Rudi?","Ayah."],["Mengapa Rudi memakai helm?","Agar kepalanya aman."],["Bagaimana akhir cerita?","Rudi bisa naik sepeda sendiri."]]],
+ lat:[["Hal yang pernah kita alami disebut ...","pengalaman","Pengalaman adalah hal yang pernah kita alami."],["Kata awal pada cerita berurutan adalah ...","pertama","Pertama menandai bagian awal cerita."],["Pelindung kepala saat naik sepeda adalah ...","helm","Helm melindungi kepala saat jatuh."],["Jika jatuh, kita ... lagi","mencoba","Jatuh bukan gagal. Kita boleh mencoba lagi."],["Bagian cerita paling akhir ditandai kata ...","terakhir","Terakhir menandai bagian penutup cerita."]],
+ rang:["Pengalaman adalah hal yang pernah kita alami.","Cerita yang baik berurutan: awal, tengah, akhir.","Berani mencoba dan tidak mudah menyerah itu baik.","Kata urutan: pertama, kemudian, lalu, setelah itu, terakhir."],
+ rem:"Mulai dengan cerita tiga gambar. Setelah lancar, tambah menjadi empat atau lima gambar.",
+ pen:"Minta anak membuat cerita bergambar tentang pengalaman baru dan menceritakannya kepada kelompok."},
+
+{ik:"🌳",ring:"Dalam tema ini kamu belajar menjaga lingkungan agar bersih, sehat, dan asri.",
+ sub:[
+ {j:"Menjaga Kebersihan",
+  b:["Lingkungan yang bersih membuat kita nyaman.","Aku membuang sampah pada tempat sampah.","Aku menyapu kelas bersama temanku.","Aku tidak mencoret dinding.","Aku mencuci tangan setelah bermain.","Lingkungan bersih membuat kita sehat."],
+  p:["Kebersihan artinya keadaan bebas dari kotoran dan sampah.","Ada dua jenis sampah yang mudah dikenal: sampah organik seperti sisa makanan dan daun, dan sampah anorganik seperti plastik dan kaleng.","Kita membuang sampah ke tempatnya. Ada tempat sampah organik dan anorganik.","Sampah yang dibuang sembarangan mengotori jalan, menyumbat selokan, dan bisa menyebabkan banjir serta penyakit.","Kita ikut menjaga kebersihan dengan piket kelas dan kerja bakti."],
+  k:[["organik","berasal dari makhluk hidup dan mudah membusuk"],["anorganik","sulit membusuk, seperti plastik"],["kerja bakti","bekerja bersama untuk kepentingan umum"]],
+  g:"Kelompokkan gambar sampah menjadi organik dan anorganik, lalu buang ke tempat yang benar.",
+  t:[["Sebutkan contoh sampah organik.","Sisa makanan dan daun."],["Sebutkan contoh sampah anorganik.","Plastik dan kaleng."]],
+  s:"Anak membuang sampah sembarangan. Letakkan tempat sampah yang mudah dijangkau dan beri contoh langsung."},
+ {j:"Hidup Sehat",
+  b:["Aku ingin hidup sehat.","Aku mencuci tangan dengan sabun.","Aku makan sayur, buah, dan minum air putih.","Aku berolahraga setiap pagi.","Aku tidur cukup di malam hari.","Tubuh sehat membuatku semangat belajar."],
+  p:["Hidup sehat berarti menjaga tubuh agar tidak mudah sakit.","Makanan sehat mengandung gizi: nasi memberi tenaga, ikan dan telur membantu pertumbuhan, sayur dan buah menjaga daya tahan tubuh.","Minumlah air putih yang cukup dan kurangi jajanan yang terlalu manis.","Olahraga seperti senam, berlari, dan bersepeda membuat badan kuat.","Istirahatlah yang cukup. Jika sakit, periksakan diri ke puskesmas atau dokter."],
+  k:[["gizi","zat makanan yang berguna bagi tubuh"],["olahraga","gerakan tubuh untuk menyehatkan badan"],["puskesmas","tempat layanan kesehatan masyarakat"]],
+  g:"Senam pagi bersama: gerakkan kepala, tangan, dan kaki selama beberapa menit.",
+  t:[["Mengapa kita makan sayur dan buah?","Agar tubuh sehat dan kuat."],["Ke mana kita pergi jika sakit?","Ke puskesmas atau dokter."]],
+  s:"Anak pilih-pilih makanan. Kenalkan sayur sedikit demi sedikit dan puji anak yang mau mencoba."},
+ {j:"Lingkungan yang Asri",
+  b:["Asri artinya indah, rapi, dan hijau.","Pohon membuat udara segar.","Aku menyiram tanaman setiap sore.","Aku tidak memetik bunga sembarangan.","Taman sekolah kami rimbun dan indah.","Kami merawatnya bersama."],
+  p:["Lingkungan asri adalah lingkungan yang indah, rapi, bersih, dan banyak tanaman.","Tumbuhan menghasilkan udara segar dan memberi keteduhan. Akarnya juga membantu menahan air di dalam tanah.","Kita merawat tanaman dengan menyiram, mencabut rumput liar, dan tidak menginjaknya.","Kita bisa menanam biji di pot atau botol bekas.","Jika semua orang menjaga, lingkungan tetap bersih, sehat, dan asri."],
+  k:[["asri","indah, rapi, dan hijau"],["rimbun","banyak daun dan lebat"],["teduh","terlindung dari panas matahari"]],
+  g:"Tanam biji kacang hijau di gelas bekas dengan kapas basah. Amati dan gambar pertumbuhannya setiap hari.",
+  t:[["Apa arti asri?","Indah, rapi, dan hijau."],["Mengapa tanaman penting?","Menghasilkan udara segar dan memberi keteduhan."]],
+  s:"Anak lupa menyiram tanaman. Buat jadwal piket tanaman yang bergiliran."}],
+ cer:["Jumat Bersih",["Hari Jumat Bu Guru mengajak kami bersih-bersih.","Ani menyapu lantai kelas.","Budi memungut sampah di halaman.","Ia memisahkan sampah daun dan plastik.","Dina menyiram tanaman di depan kelas.","Rudi mengelap meja dan kursi.","Setelah itu kami mencuci tangan dengan sabun.","Kelas kami menjadi bersih, sehat, dan asri."],
+  "Bekerja bersama membuat lingkungan kita bersih dan nyaman.",
+  [["Apa yang dilakukan Budi?","Memungut sampah dan memisahkannya."],["Siapa yang menyiram tanaman?","Dina."],["Apa yang dilakukan setelah bersih-bersih?","Mencuci tangan dengan sabun."]]],
+ lat:[["Sampah dibuang di tempat ...","sampah","Sampah dibuang di tempat sampah agar lingkungan bersih."],["Sisa makanan adalah sampah ...","organik","Sisa makanan berasal dari makhluk hidup dan mudah membusuk."],["Kita mencuci tangan dengan air dan ...","sabun","Sabun membantu menghilangkan kuman."],["Lingkungan yang indah, rapi, dan hijau disebut ...","asri","Asri artinya indah, rapi, dan hijau."],["Pohon membuat udara menjadi ...","segar","Tumbuhan menghasilkan udara segar."]],
+ rang:["Kebersihan membuat kita sehat dan nyaman.","Sampah dipisah: organik dan anorganik.","Hidup sehat: makan bergizi, olahraga, istirahat.","Lingkungan asri dijaga bersama."],
+ rem:"Gunakan benda nyata, misalnya kulit buah dan botol plastik, untuk membedakan organik dan anorganik.",
+ pen:"Minta anak membuat poster sederhana ajakan menjaga kebersihan kelas."},
+
+{ik:"🐾",ring:"Dalam tema ini kamu mengenal hewan, tanaman, dan benda di sekitarmu beserta ciri dan manfaatnya.",
+ sub:[
+ {j:"Hewan di Sekitarku",
+  b:["Di sekitarku ada banyak hewan.","Kucing mengeong dan suka menangkap tikus.","Ayam berkokok dan bertelur.","Sapi menghasilkan susu.","Burung terbang dengan sayapnya.","Kita harus menyayangi hewan."],
+  p:["Hewan adalah makhluk hidup yang bergerak, makan, bernapas, dan berkembang biak.","Hewan dapat dikelompokkan menurut tempat hidupnya. Sapi hidup di darat, ikan hidup di air, dan burung dapat terbang di udara.","Hewan ternak dipelihara untuk diambil manfaatnya. Sapi menghasilkan susu, ayam menghasilkan telur.","Hewan peliharaan seperti kucing dan kelinci perlu diberi makan, minum, dan kandang yang bersih.","Kita tidak boleh menyiksa hewan, karena hewan juga merasakan sakit."],
+  k:[["hewan ternak","hewan yang dipelihara untuk diambil manfaatnya"],["hewan peliharaan","hewan yang dirawat di rumah"],["bernapas","menarik dan mengeluarkan udara"]],
+  g:"Kelompokkan gambar hewan menjadi hewan darat, hewan air, dan hewan terbang.",
+  t:[["Hewan apa yang menghasilkan susu?","Sapi."],["Apa yang dibutuhkan hewan peliharaan?","Makanan, minuman, kandang bersih, dan kasih sayang."]],
+  s:"Anak bingung dengan hewan seperti katak yang hidup di dua tempat. Jelaskan secara sederhana bahwa katak hidup di air dan di darat."},
+ {j:"Tanaman di Sekitarku",
+  b:["Di sekitarku ada banyak tanaman.","Padi menjadi nasi.","Pisang tumbuh di pohon pisang.","Bunga mawar harum dan indah.","Tanaman perlu air dan sinar matahari.","Aku merawat tanaman dengan sabar."],
+  p:["Tanaman adalah makhluk hidup yang tumbuh. Bagian-bagiannya: akar, batang, daun, bunga, dan buah.","Akar menyerap air, batang menopang tanaman, daun membuat makanan dengan bantuan cahaya matahari, dan bunga dapat menjadi buah.","Tanaman memberi kita makanan, udara segar, dan tempat teduh. Padi menjadi nasi, dan kelapa menghasilkan santan.","Agar tumbuh baik, tanaman perlu air, cahaya matahari, udara, dan tanah yang subur.","Kita merawat tanaman dengan menyiram secukupnya dan tidak mencabutnya sembarangan."],
+  k:[["akar","bagian tanaman yang menyerap air"],["batang","bagian tanaman yang menopang"],["subur","baik untuk tumbuhnya tanaman"]],
+  g:"Amati satu tanaman. Gambar akar, batang, daun, dan bunganya, lalu beri nama tiap bagian.",
+  t:[["Sebutkan bagian tanaman.","Akar, batang, daun, bunga, dan buah."],["Apa kebutuhan tanaman?","Air, cahaya matahari, udara, dan tanah yang subur."]],
+  s:"Anak sulit membayangkan fungsi akar. Tunjukkan tangkai bunga putih di air berwarna agar anak melihat air naik."},
+ {j:"Benda di Sekitarku",
+  b:["Di sekitarku ada banyak benda.","Batu itu keras.","Kapas itu lunak.","Gelas itu licin.","Amplas itu kasar.","Benda dapat dikelompokkan."],
+  p:["Benda adalah segala sesuatu yang ada di sekitar kita dan dapat dilihat atau diraba.","Benda memiliki sifat: keras atau lunak, kasar atau halus, berat atau ringan.","Benda juga dapat dikelompokkan menurut bentuk, warna, atau kegunaannya.","Benda dibuat dari bahan seperti kayu, plastik, kaca, besi, dan kain.","Kita memakai benda dengan hati-hati dan merawatnya agar awet."],
+  k:[["benda","sesuatu yang ada di sekitar kita"],["sifat","ciri khas suatu benda"],["bahan","sesuatu yang dipakai untuk membuat benda"]],
+  g:"Kumpulkan tiga benda. Raba lalu katakan sifatnya: keras atau lunak, kasar atau halus.",
+  t:[["Sebutkan benda yang keras.","Batu."],["Benda dari kapas sifatnya apa?","Lunak."]],
+  s:"Anak mengira benda ringan pasti terapung. Uji beberapa benda di dalam baskom air agar anak melihat sendiri."}],
+ cer:["Kucing Kecil",["Pagi itu Rudi melihat kucing kecil di depan rumah.","Kucing itu mengeong pelan.","Rudi tahu kucing itu lapar.","Ia mengambil mangkuk dan menuang susu.","Kucing minum dengan lahap.","Rudi mengelus bulunya yang lembut.","Ibu berkata Rudi boleh merawat kucing itu.","Rudi memberinya nama Manis."],
+  "Kita menyayangi dan menolong hewan.",
+  [["Siapa yang melihat kucing?","Rudi."],["Apa yang diberikan Rudi kepada kucing?","Susu."],["Siapa nama kucing itu?","Manis."]]],
+ lat:[["Sapi menghasilkan ...","susu","Sapi adalah hewan ternak penghasil susu."],["Tanaman butuh air dan ...","cahaya matahari","Tanaman butuh air, cahaya matahari, udara, dan tanah."],["Batu itu ...","keras","Batu adalah benda yang sifatnya keras."],["Bagian tanaman yang menyerap air adalah ...","akar","Akar menyerap air dari dalam tanah."],["Hewan yang terbang dengan sayap adalah ...","burung","Burung memakai sayap untuk terbang."]],
+ rang:["Hewan dapat dikelompokkan menurut tempat hidupnya.","Tanaman punya akar, batang, daun, bunga, dan buah.","Benda punya sifat, misalnya keras, lunak, kasar, dan halus.","Kita menyayangi hewan dan merawat tanaman."],
+ rem:"Gunakan benda dan gambar nyata. Kelompokkan satu jenis dulu, misalnya hewan darat saja.",
+ pen:"Minta anak membuat tabel sederhana: nama benda dan sifatnya, lalu menjelaskannya."},
+
+{ik:"🌦️",ring:"Dalam tema ini kamu mengenal cuaca, siang dan malam, serta cara menjaga alam yang indah.",
+ sub:[
+ {j:"Cuaca Hari Ini",
+  b:["Hari ini cuaca cerah.","Matahari bersinar terang.","Kadang langit berawan.","Kadang turun hujan.","Saat hujan aku memakai jas hujan.","Saat panas aku memakai topi."],
+  p:["Cuaca adalah keadaan udara di suatu tempat pada waktu tertentu, misalnya cerah, berawan, hujan, atau berangin.","Cuaca bisa berubah dalam satu hari. Pagi cerah, siang berawan, sore hujan.","Saat cuaca cerah, kita bisa menjemur pakaian dan bermain di luar.","Saat hujan, kita membawa payung atau memakai jas hujan, dan tidak bermain hujan terlalu lama agar tidak sakit.","Saat ada petir, kita masuk ke dalam rumah dan tidak berteduh di bawah pohon."],
+  k:[["cuaca","keadaan udara"],["mendung","langit gelap tertutup awan"],["berangin","udara bergerak cukup kencang"]],
+  g:"Amati langit pagi ini dan gambar cuacanya. Bandingkan dengan cuaca siang hari.",
+  t:[["Apa itu cuaca?","Keadaan udara pada waktu tertentu."],["Apa yang dipakai saat hujan?","Payung atau jas hujan."]],
+  s:"Anak mencampur cuaca dan musim. Jelaskan bahwa cuaca bisa berubah cepat, sedangkan musim berlangsung lama."},
+ {j:"Siang dan Malam",
+  b:["Siang hari ada matahari.","Malam hari ada bulan dan bintang.","Siang hari kita beraktivitas.","Malam hari kita beristirahat.","Pagi hari matahari terbit.","Sore hari matahari terbenam."],
+  p:["Siang terjadi saat sisi bumi tempat kita tinggal menghadap matahari, sehingga terang. Malam terjadi saat sisi itu membelakangi matahari, sehingga gelap.","Bumi berputar pada porosnya, sehingga siang dan malam datang bergantian.","Matahari terbit di timur dan terbenam di barat.","Siang hari kita sekolah, bermain, dan bekerja. Malam hari kita beristirahat dan tidur.","Kita bersyukur kepada Tuhan atas matahari yang memberi cahaya dan atas bulan serta bintang di malam hari."],
+  k:[["terbit","muncul di langit"],["terbenam","menghilang di ujung langit"],["berputar","bergerak melingkar"]],
+  g:"Gunakan senter sebagai matahari dan bola sebagai bumi. Putar bola agar anak melihat terang dan gelap bergantian.",
+  t:[["Matahari terbit di arah mana?","Timur."],["Mengapa ada siang dan malam?","Karena bumi berputar."]],
+  s:"Anak mengira matahari yang berputar mengelilingi kita. Gunakan alat peraga senter dan bola."},
+ {j:"Bersahabat dengan Alam",
+  b:["Alam memberi kita banyak hal.","Hujan membuat tanaman tumbuh.","Matahari memberi cahaya dan rasa hangat.","Angin menggerakkan layang-layang.","Kita bersyukur atas alam.","Kita menjaga alam agar lestari."],
+  p:["Alam adalah segala yang ada di sekitar kita: matahari, air, udara, tanah, dan makhluk hidup.","Hujan mengisi sungai dan sumur, serta memberi air bagi tanaman, hewan, dan manusia.","Angin dapat meniup layang-layang dan menggerakkan kincir, tetapi angin yang sangat kencang bisa membahayakan.","Alam kadang menimbulkan bencana seperti banjir dan angin kencang. Kita harus waspada dan mengikuti arahan orang dewasa.","Kita menjaga alam dengan tidak menebang pohon sembarangan, tidak membuang sampah ke sungai, dan menghemat air."],
+  k:[["alam","segala yang ada di sekitar kita"],["lestari","tetap terjaga dan tidak rusak"],["waspada","berhati-hati terhadap bahaya"]],
+  g:"Buat daftar tiga cara menjaga alam, lalu gambar salah satunya.",
+  t:[["Apa manfaat hujan?","Memberi air bagi tanaman, hewan, dan manusia."],["Bagaimana cara menjaga alam?","Tidak membuang sampah sembarangan, menghemat air, dan tidak menebang pohon sembarangan."]],
+  s:"Sebagian anak takut petir. Ajarkan agar tetap tenang dan masuk ke dalam rumah."}],
+ cer:["Hujan Turun",["Siang itu langit mulai mendung.","Angin bertiup agak kencang.","Tak lama kemudian hujan turun deras.","Dina sedang berjalan pulang dari sekolah.","Ia membuka payung dan berjalan hati-hati.","Dina berteduh di warung ketika terdengar petir.","Hujan reda dan muncul pelangi di langit.","Dina sampai di rumah dan berganti baju yang kering."],
+  "Kita bersiap dan berhati-hati menghadapi cuaca, dan bersyukur atas alam.",
+  [["Apa yang dibuka Dina?","Payung."],["Apa yang muncul setelah hujan reda?","Pelangi."],["Apa yang dilakukan Dina di rumah?","Berganti baju yang kering."]]],
+ lat:[["Saat hujan kita membawa ...","payung","Payung melindungi kita dari hujan."],["Matahari terbit di arah ...","timur","Matahari terbit di timur dan terbenam di barat."],["Keadaan udara disebut ...","cuaca","Cuaca adalah keadaan udara pada waktu tertentu."],["Malam hari ada bulan dan ...","bintang","Bulan dan bintang tampak di langit malam."],["Alam harus kita ...","jaga","Kita menjaga alam agar tetap lestari."]],
+ rang:["Cuaca adalah keadaan udara dan bisa berubah.","Siang dan malam terjadi karena bumi berputar.","Alam memberi banyak manfaat.","Kita bersyukur dan menjaga alam."],
+ rem:"Gunakan gambar cuaca bergantian. Latih menyebut tiga jenis cuaca terlebih dahulu.",
+ pen:"Minta anak membuat catatan cuaca selama lima hari dengan gambar sederhana."}
+];
+const H=s=>"## "+s;
+function pages(bi,g){
+  const i=bi>>1,t=T[i],n=TEMA[i],no=i+1,subs=t.sub.map(s=>s.j);
+  const [cj,cl,cm,cq]=[t.cer[0],t.cer[1],t.cer[2],t.cer[3]];
+  if(g=="siswa"){
+    const P=[
+      {h:`Selamat Datang! ${t.ik}`,l:[`Ini Buku Siswa Tema ${no}: ${n}.`,t.ring,H("Yang akan kamu pelajari"),...subs.map((s,k)=>`${k+1}. ${s}`),H("Cara memakai buku ini"),"Bacalah pelan-pelan dari halaman pertama.","Ketuk satu kalimat untuk mendengar suaranya.","Ketuk tombol Bacakan Semua agar buku dibacakan dari awal.","Jika sudah paham, ketuk Lanjut."]}
+    ];
+    t.sub.forEach((s,k)=>{
+      const lb=`Subtema ${k+1}: ${s.j}`;
+      P.push({h:`${lb} · Ayo Membaca`,l:[...s.b,H("Coba ceritakan"),`Apa yang kamu ketahui tentang ${s.j.toLowerCase()}?`]});
+      P.push({h:`${lb} · Ayo Memahami`,l:[H("Penjelasan"),...s.p]});
+      P.push({h:`${lb} · Kata Baru dan Kegiatan`,l:[H("Kata baru"),...s.k.map(x=>`${x[0]}: ${x[1]}.`),H("Ayo mencoba"),s.g]});
+    });
+    P.push({h:`Ayo Membaca Cerita: ${cj}`,l:[...cl]});
+    P.push({h:"Ayo Berpikir tentang Cerita",l:[H("Jawablah dengan lisan"),...cq.map((x,k)=>`${k+1}. ${x[0]}`),H("Pesan cerita"),cm]});
+    P.push({h:"Ayo Berlatih",l:[H("Lengkapi kalimat berikut"),...t.lat.map((x,k)=>`${k+1}. ${x[0]}`)]});
+    P.push({h:"Periksa Jawabanmu",l:[H("Jawaban dan alasannya"),...t.lat.map((x,k)=>`${k+1}. Jawabannya ${x[1]}. ${x[2]}`)]});
+    P.push({h:"Rangkuman",l:[H(`Yang sudah kita pelajari di Tema ${no}`),...t.rang.map((x,k)=>`${k+1}. ${x}`)]});
+    P.push({h:"Hebat! 🎉",l:[`Kamu sudah membaca Tema ${no}: ${n}.`,"Ceritakan kembali apa yang kamu pelajari kepada temanmu atau keluargamu.","Kamu boleh membaca ulang halaman yang masih sulit.","Sampai jumpa di tema berikutnya!"]});
+    return P;
+  }
+  const P=[
+    {h:"Tujuan dan Gambaran Tema",l:[`Buku Guru Tema ${no}: ${n}.`,t.ring,H("Subtema"),...subs.map((s,k)=>`Subtema ${k+1}: ${s}.`),H("Tujuan pembelajaran"),...t.sub.map(s=>`Anak mampu menjelaskan dan menerapkan: ${s.j.toLowerCase()}.`),"Anak mampu membaca bacaan pendek dengan lancar dan menjawab pertanyaan tentang isinya.","Anak mampu bercerita dengan kalimat yang jelas dan sopan.",H("Alokasi waktu yang disarankan"),"Satu subtema untuk satu pertemuan sekitar enam puluh menit. Tambahkan satu pertemuan untuk cerita dan penilaian."]},
+    {h:"Persiapan dan Media",l:[H("Sebelum mengajar"),"Baca seluruh halaman Buku Siswa untuk tema ini.","Siapkan kartu gambar, krayon, kertas, dan benda nyata yang sesuai dengan subtema.","Tata tempat duduk agar semua anak dapat melihat guru dan papan.",H("Kegiatan pokok yang perlu disiapkan"),...t.sub.map((s,k)=>`Subtema ${k+1}: ${s.g}`),H("Prinsip mengajar kelas satu"),"Gunakan kalimat pendek dan suara yang jelas.","Beri contoh nyata sebelum menjelaskan konsep.","Beri pujian segera agar anak percaya diri."]}
+  ];
+  t.sub.forEach((s,k)=>{
+    const lb=`Subtema ${k+1}: ${s.j}`;
+    P.push({h:`${lb} · Langkah Pembelajaran`,l:[H("Pembuka (± 10 menit)"),"Ucapkan salam dan ajak anak berdoa bersama.",`Ajukan pertanyaan pemantik: apa yang kamu ketahui tentang ${s.j.toLowerCase()}?`,"Dengarkan jawaban beberapa anak tanpa langsung menyalahkan.",H("Kegiatan inti (± 40 menit)"),"Bacakan teks Ayo Membaca dua kali. Pertama, anak menyimak. Kedua, anak membaca bersama sambil menunjuk kata.","Jelaskan konsep pada halaman Ayo Memahami dengan contoh dari sekitar anak.","Perkenalkan kata baru: sebutkan, minta anak menirukan, lalu pakai dalam kalimat.",`Lakukan kegiatan: ${s.g}`,H("Penutup (± 10 menit)"),"Ajak anak menyimpulkan: apa yang kamu pelajari hari ini?","Beri pujian dan umpan balik pada usaha anak, lalu tutup dengan doa."]});
+    P.push({h:`${lb} · Tanya Jawab dan Kesulitan`,l:[H("Pertanyaan pemandu dan jawaban"),...s.t.map(x=>`${x[0]} Jawaban: ${x[1]}`),H("Kata kunci yang perlu dikuasai"),...s.k.map(x=>`${x[0]}: ${x[1]}.`),H("Kesulitan yang sering muncul"),s.s]});
+  });
+  P.push({h:`Cerita Pendamping: ${cj}`,l:[H("Bacakan cerita"),...cl,H("Pertanyaan pemahaman dan jawaban"),...cq.map(x=>`${x[0]} Jawaban: ${x[1]}`),H("Pesan cerita"),cm,"Ajak anak menceritakan kembali dengan kata sendiri."]});
+  P.push({h:"Penilaian",l:[H("Aspek yang dinilai"),"Membaca: lancar membaca bacaan pendek dan menunjuk kata dengan benar.","Berbicara: berani bercerita dengan kalimat jelas dan sopan.","Pemahaman: dapat menjawab pertanyaan tentang bacaan.","Sikap: sopan, tertib, mau bekerja sama.",H("Cara menilai"),"Gunakan tiga tingkat: Sudah Tampak, Mulai Tampak, dan Perlu Bimbingan.","Catat perkembangan setiap anak, bukan hanya hasil akhir.",H("Kunci latihan Ayo Berlatih"),...t.lat.map((x,k)=>`${k+1}. ${x[0].replace("...",x[1])} Alasan: ${x[2]}`)]});
+  P.push({h:"Remedial, Pengayaan, dan Orang Tua",l:[H("Bimbingan untuk anak yang belum lancar (remedial)"),t.rem,"Beri waktu tambahan dan semangat, tanpa membandingkan dengan anak lain.",H("Kegiatan untuk anak yang sudah lancar (pengayaan)"),t.pen,H("Rangkuman untuk guru"),...t.rang.map((x,k)=>`${k+1}. ${x}`),H("Bekerja sama dengan orang tua"),"Kirim pesan singkat tentang topik yang dipelajari.","Sarankan orang tua membaca bersama anak sepuluh menit setiap hari.","Minta orang tua memuji usaha anak dan tidak memarahinya saat salah."]});
+  return P;
+}
+let BK=null,BP=0;
+function ob(i){
+  BK=i;BP=Math.min((S.bp||{})[i]||0,pages(i,BOOKS[i].g).length-1);br();
+}
+function fsz(d){S.fs=Math.max(0,Math.min(2,(S.fs??1)+d));save();const e=document.getElementById("lines");if(e)e.className="f"+S.fs}
+function br(){
+  const b=BOOKS[BK],ps=pages(BK,b.g),p=ps[BP],n=ps.length,last=BP==n-1;
+  S.bp=S.bp||{};S.bp[BK]=BP;
+  if(last){S.bd=S.bd||[];if(!S.bd.includes(BK))S.bd.push(BK)}
+  save();
+  const ln=l=>l.startsWith("## ")?`<h3 class="ln sub" onclick="hearEl(this)">${esc(l.slice(3))}</h3>`:`<p class="ln" onclick="hearEl(this)">${esc(l)}</p>`;
+  A.v=`<button class="back" onclick="buku()">← Daftar Buku</button><div class="sm">${b.g=="siswa"?"Buku Siswa":"Buku Guru"} · ${esc(b.n)}</div><div class="dots">${ps.map((_,k)=>`<i class="${k==BP?"on":""}"${k==BP?` style="background:${b.c}"`:""}></i>`).join("")}</div><div class="panel"><h2>${esc(p.h)}</h2><div class="rbar"><button class="spk" id="rb" onclick="readAll()">🔊 Bacakan Semua</button><button class="spk" onclick="fsz(-1)" aria-label="Perkecil huruf">A−</button><button class="spk" onclick="fsz(1)" aria-label="Perbesar huruf">A+</button></div><div class="sm">Halaman ${BP+1} dari ${n}. Ketuk kalimat untuk mendengarnya.</div><div id="lines" class="f${S.fs??1}">${p.l.map(ln).join("")}</div></div><select class="srch" aria-label="Loncat ke halaman" onchange="BP=+this.value;br()">${ps.map((x,k)=>`<option value="${k}"${k==BP?" selected":""}>${k+1}. ${esc(x.h.replace(/[\p{Extended_Pictographic}️]/gu,"").trim())}</option>`).join("")}</select>${last&&b.url?`<button class="btn big ghost" onclick="window.open('${esc(b.url)}','_blank','noopener')">📄 Buka Buku Lengkap (Google Drive)</button>`:""}<div class="nav"><button class="btn ghost" ${BP?"":"disabled"} onclick="BP--;br()">← Kembali</button>${last?`<button class="btn" style="background:${b.c}" onclick="buku()">Selesai ✓</button>`:`<button class="btn" style="background:${b.c}" onclick="BP++;br()">Lanjut →</button>`}</div>`;
+  scrollTo(0,0);
+}
+function toast(m){const e=document.getElementById("toast");e.textContent=m;e.hidden=false;clearTimeout(tt);tt=setTimeout(()=>e.hidden=true,2800)}
+const TH=[["auto","Otomatis"],["light","Terang"],["dark","Gelap"]],RTL=[[0,"Pelan"],[1,"Normal"],[2,"Cepat"]];
+function chipsH(g,list,cur){return `<div class="chips">${list.map(([v,l])=>{const on=String(cur)==String(v);return `<button class="chip${on?" on":""}" data-g="${g}" data-v="${v}" aria-pressed="${on}" onclick="setOpt('${g}','${v}')">${l}</button>`}).join("")}</div>`}
+function setOpt(g,v){
+  if(g=="rt"){S.rt=+v;save();say("Halo! Ayo belajar membaca.")}else if(g=="fs"){S.fs=+v;save()}else{S.th=v=="auto"?undefined:v;save();applyTheme()}
+  const cur=g=="rt"?(S.rt??1):g=="fs"?(S.fs??1):(S.th||"auto");
+  document.querySelectorAll(`[data-g="${g}"]`).forEach(b=>{const on=b.dataset.v==String(cur);b.classList.toggle("on",on);b.setAttribute("aria-pressed",String(on))});
+}
+function sw(k,ic,t,d){return `<div class="set"><span>${ic} ${t}<small>${d}</small></span><button class="sw" data-k="${k}" role="switch" aria-label="${t}" aria-checked="${S[k]!==0}" onclick="tg('${k}')"><i></i></button></div>`}
+function tentang(){
+  TAB="tentang";
+  const ms=D.modul,n=ms.length,done=ms.filter(m=>S[m.id]!=null).length,perf=ms.filter(m=>S[m.id]==3).length,gp=GAMES.filter(g=>S["g_"+g.id]!=null).length;
+  const bd=(S.bd||[]).length,bs=Object.keys(S.bp||{}).length,pg=BOOKS.reduce((a,b,i)=>a+pages(i,b.g).length,0),sub=ms.reduce((a,m)=>a+m.subMateri.length,0);
+  const B=[["🌱","Pemula","Selesaikan 1 modul",done>=1],["🧭","Penjelajah","Selesaikan semua modul",done==n],["🌟","Bintang","Nilai sempurna semua modul",perf==n],["🎮","Jago Main","Coba semua game",gp==GAMES.length],["🔥","Rajin","Belajar 3 hari beruntun",(S.bs||0)>=3],["🎯","Jagoan","50 jawaban benar",(S.ok||0)>=50],["📖","Kutu Buku","Baca 1 buku sampai selesai",bd>=1],["🏛️","Pustakawan","Baca 8 buku sampai selesai",bd>=8]];
+  const Q=(q,a)=>`<details class="qa"><summary>${q}</summary><p>${a}</p></details>`;
+  A.v=`<div class="hero"><h1>${S.nama?`Halo, ${esc(S.nama)}!`:"Ayo Membaca!"}</h1><div class="sm">Statistik belajar, lencana, pengaturan, dan panduan aplikasi</div></div><div class="stats"><div class="stat"><b>${done}/${n}</b>Modul selesai</div><div class="stat"><b>${S.ok||0}</b>Jawaban benar</div><div class="stat"><b>${perf}</b>Nilai sempurna</div><div class="stat"><b>🔥 ${streak()}</b>Hari beruntun</div><div class="stat"><b>${gp}/${GAMES.length}</b>Game dicoba</div><div class="stat"><b>${S.bs||0}</b>Rekor hari beruntun</div><div class="stat"><b>${bd}/${BOOKS.length}</b>Buku selesai</div><div class="stat"><b>${bs}</b>Buku dimulai</div><div class="stat"><b>${pg}</b>Halaman buku tersedia</div></div><h2>Lencana</h2><div class="badges">${B.map(b=>`<div class="bd${b[3]?"":" lock"}"><i>${b[3]?b[0]:"🔒"}</i><b>${b[1]}</b>${b[2]}</div>`).join("")}</div>
+  <div class="panel"><h2>⚙️ Pengaturan</h2><label class="sm" for="nm">Nama kamu</label><input id="nm" class="srch" maxlength="20" autocomplete="off" placeholder="Tulis namamu di sini" value="${esc(S.nama||"")}" oninput="S.nama=this.value.slice(0,20).trim();save()">
+  ${sw("vo","🔊","Suara bacaan","Suara saat tombol 🔊, huruf, atau kalimat ditekan")}
+  ${sw("fx","🎵","Efek suara","Bunyi untuk jawaban benar, salah, dan menang")}
+  <div class="set" style="display:block"><span>🐢 Kecepatan membaca</span>${chipsH("rt",RTL,S.rt??1)}</div>
+  <div class="set" style="display:block"><span>🔠 Ukuran huruf buku</span>${chipsH("fs",[[0,"Kecil"],[1,"Sedang"],[2,"Besar"]],S.fs??1)}</div>
+  <div class="set" style="display:block"><span>🌓 Tampilan</span>${chipsH("th",TH,S.th||"auto")}</div>
+  <button class="btn ghost" style="margin-top:6px" onclick="hear('Halo! Ayo kita belajar membaca bersama.')">🔊 Tes Suara</button></div>
+  <div class="panel"><h2>📘 Tentang Aplikasi</h2><p class="pl">Aplikasi ini membantu anak <b>kelas 1 SD</b> belajar membaca dan berbahasa Indonesia dengan cara yang menyenangkan. Anak belajar lewat materi bergambar, kuis, game, dan buku tematik yang bisa dibaca langsung di layar.</p><p class="pl">Aplikasi ini bisa dipakai <b>anak sendiri</b>, <b>didampingi orang tua</b>, atau <b>dipandu guru</b> di kelas. Setiap materi memuat tips untuk guru dan orang tua.</p><p class="pl">Aplikasi dirancang dengan huruf besar, kalimat pendek, dan suara bacaan supaya mudah diikuti anak yang baru belajar membaca.</p></div>
+  <div class="panel"><h2>🧭 Cara Menggunakan</h2><p class="pl"><b>1. Beranda.</b> Pilih modul belajar. Baca materi dan ketuk 🔊 untuk mendengarnya.</p><p class="pl"><b>2. Kuis.</b> Setelah membaca, kerjakan kuis. Soal diacak dan setiap jawaban punya penjelasan. Nilai terbaik disimpan sebagai bintang.</p><p class="pl"><b>3. Game.</b> Berlatih sambil bermain. Hasil tiap game tersimpan.</p><p class="pl"><b>4. Buku.</b> Pilih Buku Siswa atau Buku Guru, lalu ketuk Baca. Pakai Lanjut dan Kembali untuk berpindah halaman, atau pilih halaman dari daftar di bawah bacaan.</p><p class="pl"><b>5. Suara.</b> Ketuk satu kalimat untuk mendengarnya, atau ketuk Bacakan Semua. Kalimat yang dibaca akan disorot.</p><p class="pl"><b>6. Ukuran huruf.</b> Ubah dengan tombol A− dan A+ di halaman buku, atau di Pengaturan.</p></div>
+  <div class="panel"><h2>📦 Isi Aplikasi</h2><p class="pl">• <b>${n} modul</b> dengan <b>${sub} materi</b>, lengkap dengan tips guru dan fakta menarik.</p><p class="pl">• <b>${D.kuis.length} soal kuis</b> yang diacak, plus latihan campur dari semua modul.</p><p class="pl">• <b>${GAMES.length} game edukasi</b> untuk melatih huruf, suku kata, dan kata.</p><p class="pl">• <b>${BOOKS.length} buku</b> (8 Buku Siswa dan 8 Buku Guru) dengan total <b>${pg} halaman</b> yang bisa dicari, diberi favorit, dan dilanjutkan dari halaman terakhir.</p><p class="pl">• Hari beruntun, lencana, serta tampilan terang dan gelap.</p></div>
+  <div class="panel"><h2>📚 Tentang Buku K13</h2><p class="pl">Buku mengikuti struktur <b>Kurikulum 2013 tematik terpadu kelas 1 SD</b>: ada <b>8 tema</b>, dan tiap tema punya <b>3 subtema</b>. Setiap tema tersedia dalam <b>Buku Siswa</b> untuk anak dan <b>Buku Guru</b> untuk pendamping.</p><p class="pl"><b>Buku Siswa</b> berisi pengantar, bacaan, penjelasan, kata baru, kegiatan, cerita, latihan beserta pembahasannya, dan rangkuman.</p><p class="pl"><b>Buku Guru</b> berisi tujuan, persiapan, langkah pembelajaran, tanya jawab, cerita pendamping, penilaian dengan kunci jawaban, remedial, pengayaan, dan saran bekerja sama dengan orang tua.</p>${TEMA.map((t,i)=>`<p class="pl">${T[i].ik} <b>Tema ${i+1}: ${t}</b><br><span class="sm">${T[i].sub.map(s=>s.j).join(" · ")}</span></p>`).join("")}<p class="pl sm">Catatan: teks buku di aplikasi ini disusun mengikuti tema dan subtema K13, bukan salinan buku terbitan resmi. Untuk buku resmi lengkap, isi tautan Google Drive pada tiap buku.</p></div>
+  <div class="panel"><h2>💡 Tips untuk Orang Tua dan Guru</h2><p class="pl">• Belajar sebentar tetapi rutin, sekitar <b>lima belas sampai dua puluh menit</b> sehari, lebih baik daripada lama tetapi jarang.</p><p class="pl">• Duduk di samping anak. Minta anak <b>menunjuk kata</b> sambil membaca.</p><p class="pl">• Ajukan pertanyaan: <b>siapa, di mana, apa yang terjadi?</b> Biarkan anak menjawab dengan kata-katanya sendiri.</p><p class="pl">• Puji usaha anak, bukan hanya hasilnya. Salah itu bagian dari belajar.</p><p class="pl">• Hubungkan bacaan dengan kehidupan sehari-hari, misalnya mencari benda yang disebut di buku.</p><p class="pl">• Batasi waktu layar dan istirahatkan mata anak setelah belajar.</p></div>
+  <div class="panel"><h2>❓ Pertanyaan yang Sering Muncul</h2>${Q("Suara bacaan tidak keluar, apa yang harus dilakukan?","Pastikan tombol 🔊 di kanan atas menyala dan volume perangkat tidak nol. Pada sebagian HP, suara Bahasa Indonesia perlu diunduh di pengaturan suara perangkat. Aplikasi memakai suara bawaan perangkat, jadi hasilnya bisa berbeda di tiap perangkat.")}${Q("Apakah aplikasi bisa dipakai tanpa internet?","Isi materi, kuis, game, dan buku sudah ada di dalam halaman ini, sehingga tidak butuh internet untuk dibaca. Internet hanya dipakai untuk memuat font. Tanpa internet, aplikasi tetap jalan dengan font cadangan.")}${Q("Di mana progres belajar disimpan?","Progres, bintang, dan halaman buku terakhir disimpan di perangkat dan browser yang dipakai. Data tidak dikirim ke server. Jika berpindah perangkat atau menghapus data browser, progres tidak ikut pindah.")}${Q("Bagaimana melanjutkan membaca buku?","Di halaman Buku, tombol akan berubah menjadi Lanjut. Ketuk untuk kembali ke halaman terakhir yang dibaca.")}${Q("Bagaimana menambahkan buku resmi?","Isi tautan Google Drive pada kolom url tiap buku di berkas aplikasi. Tombol untuk membukanya akan muncul di halaman terakhir buku tersebut.")}${Q("Bagaimana menghapus semua progres?","Ketuk tombol Hapus Progres Belajar di bawah, lalu ketuk sekali lagi untuk memastikan. Nama dan pengaturan suara tetap tersimpan.")}</div>
+  <div class="panel"><h2>🔒 Privasi dan Versi</h2><p class="pl">Aplikasi tidak meminta data pribadi selain nama panggilan yang boleh dikosongkan. Nama hanya tersimpan di perangkat ini.</p><p class="pl sm" style="margin-bottom:0">Versi 2.0 · Bahasa Indonesia Kelas 1 SD</p></div><button class="btn big ghost" onclick="rset()">Hapus Progres Belajar</button>`;
+  scrollTo(0,0);
+}
+function rset(){if(!rc){rc=1;toast("Tekan sekali lagi untuk menghapus semua progres.");setTimeout(()=>rc=0,3000);return}rc=0;const k={vo:S.vo,fx:S.fx,rt:S.rt,th:S.th,nama:S.nama,fs:S.fs};S=k;save();tentang()}
+applyTheme();
+home();
+</script>
+</body>
+</html>
